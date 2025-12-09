@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="layout-mexico-focused">
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -19,43 +19,58 @@
                 </a>
             </div>
             <ul class="nav-menu">
-                <li><a href="/" class="nav-link" data-translate="nav.home">Home</a></li>
+                <li>
+                    <a href="/" class="nav-link">
+                        <i class="fas fa-home"></i> Inicio
+                    </a>
+                </li>
+            
                 <li class="nav-dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-translate="nav.brokers">Brokers</a>
+                    <a href="#" class="nav-link dropdown-toggle">
+                        <i class="fas fa-flag"></i> México
+                    </a>
                     <div class="dropdown-menu">
-                        <a href="/brokers.html" class="dropdown-item" data-translate="nav.allBrokers">Todos los Brokers</a>
+            <a href="/payment-methods-latam.html" class="dropdown-item">SPEI</a><a href="/regulated-brokers-latam.html" class="dropdown-item">CNBV</a><a href="/how-to-choose-broker.html" class="dropdown-item">Impuestos</a>
                     </div>
                 </li>
+            
                 <li class="nav-dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-translate="nav.categories">Categorías</a>
+                    <a href="#" class="nav-link dropdown-toggle">
+                        <i class="fas fa-globe-americas"></i> LATAM
+                    </a>
                     <div class="dropdown-menu">
-                        <a href="/forex-trading.html" class="dropdown-item" data-translate="nav.forex">Forex</a>
-                        <a href="/stocks-trading.html" class="dropdown-item" data-translate="nav.stocks">Acciones</a>
-                        <a href="/crypto-trading.html" class="dropdown-item" data-translate="nav.crypto">Criptomonedas</a>
-                        <a href="/cfd-trading.html" class="dropdown-item" data-translate="nav.cfds">CFDs</a>
-                        <a href="/commodities-trading.html" class="dropdown-item" data-translate="nav.commodities">Commodities</a>
-                        <a href="/education-training.html" class="dropdown-item" data-translate="nav.education">Educación y Capacitación</a>
+            <a href="/brokers.html" class="dropdown-item">Otros Países</a><a href="/brokers.html" class="dropdown-item">Guías por País</a>
                     </div>
                 </li>
-                <li><a href="/reviews.html" class="nav-link active" data-translate="nav.reviews">Reseñas</a></li>
-                <li><a href="/#about" class="nav-link" data-translate="nav.about">Acerca de</a></li>
-                <li><a href="/#contact" class="nav-link" data-translate="nav.contact">Contacto</a></li>
-                <li class="language-selector">
-                    <button type="button" class="language-btn" id="languageBtn">
-                        <i class="fas fa-globe"></i>
-                        <span id="currentLanguage">🇺🇸 English</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="language-dropdown" id="languageDropdown" style="display: none;">
-                        <div class="language-option" data-lang="en">
-                            <span class="flag">🇺🇸</span>
-                            <span>English</span>
-                        </div>
-                        <div class="language-option" data-lang="es">
-                            <span class="flag">🇲🇽</span>
-                            <span>Español</span>
-                        </div>
-                    </div>
+            
+                <li>
+                    <a href="/best-stock-trading-brokers.html" class="nav-link">
+                        <i class="fas fa-building"></i> Brokers USA
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/broker-comparison.html" class="nav-link">
+                        <i class="fas fa-file-invoice-dollar"></i> Reportes
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/forex-trading.html" class="nav-link">
+                        <i class="fas fa-dollar-sign"></i> Trading MXN
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/best-brokers-beginners.html" class="nav-link">
+                        <i class="fas fa-gift"></i> Kits Inicio
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="#contact" class="nav-link">
+                        <i class="fas fa-envelope"></i> Contacto
+                    </a>
                 </li>
             </ul>
             <div class="nav-toggle">

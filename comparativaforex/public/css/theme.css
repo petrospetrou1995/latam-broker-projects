@@ -47,3 +47,34 @@ body {
     border-color: var(--primary-color);
     border-width: 2px;
 }
+
+
+
+/* Forex Comparison Layout - ComparativaForex */
+.layout-forex-comparison .brokers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+.layout-forex-comparison .broker-card {
+    border: 1px solid rgba(21, 101, 192, 0.2);
+    border-radius: 8px;
+    background: linear-gradient(to bottom, white 0%, rgba(21, 101, 192, 0.02) 100%);
+}
+
+.layout-forex-comparison .broker-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 15px rgba(21, 101, 192, 0.2);
+}
+
+.layout-forex-comparison .nav-menu {
+    display: flex;
+    gap: 10px;
+}
+
+.layout-forex-comparison .nav-link {
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 1px solid rgba(21, 101, 192, 0.3);
+}

@@ -43,7 +43,7 @@
     <link href="/css/category-pages.css" rel="stylesheet">
     <link href="/css/brokers.css" rel="stylesheet">
 </head>
-<body>
+<body class="layout-leaderboard-grid">
     <!-- Breadcrumb Navigation -->
     <nav class="breadcrumb-nav" aria-label="Breadcrumb">
         <div class="container">
@@ -71,54 +71,46 @@
                 </a>
             </div>
             <ul class="nav-menu">
-                <li><a href="/" class="nav-link" data-translate="nav.home">Inicio</a></li>
+                <li>
+                    <a href="/" class="nav-link">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                </li>
+            
                 <li class="nav-dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-translate="nav.brokers">Brokers</a>
+                    <a href="#" class="nav-link dropdown-toggle">
+                        <i class="fas fa-trophy"></i> Top 10
+                    </a>
                     <div class="dropdown-menu">
-                        <a href="/brokers.html" class="dropdown-item" data-translate="nav.allBrokers">Todos los Brokers</a>
+            <a href="/best-brokers-beginners.html" class="dropdown-item">Ranking Mensual</a><a href="/brokers.html" class="dropdown-item">Por País</a><a href="/best-low-fee-brokers.html" class="dropdown-item">Mejores Spreads</a>
                     </div>
                 </li>
+            
                 <li class="nav-dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-translate="nav.categories">Categorías</a>
+                    <a href="#" class="nav-link dropdown-toggle">
+                        <i class="fas fa-balance-scale"></i> Comparar
+                    </a>
                     <div class="dropdown-menu">
-                        <a href="/forex-trading.html" class="dropdown-item" data-translate="nav.forex">Forex</a>
-                        <a href="/stocks-trading.html" class="dropdown-item" data-translate="nav.stocks">Acciones</a>
-                        <a href="/crypto-trading.html" class="dropdown-item" data-translate="nav.crypto">Criptomonedas</a>
-                        <a href="/cfd-trading.html" class="dropdown-item" data-translate="nav.cfds">CFDs</a>
-                        <a href="/commodities-trading.html" class="dropdown-item" data-translate="nav.commodities">Commodities</a>
-                        <a href="/education-training.html" class="dropdown-item" data-translate="nav.education">Educación y Capacitación</a>
+            <a href="/broker-comparison.html" class="dropdown-item">Comparar 3 Brokers</a><a href="/forex-trading.html" class="dropdown-item">Spreads en Vivo</a><a href="/payment-methods-latam.html" class="dropdown-item">Métodos de Pago</a>
                     </div>
                 </li>
-                <li class="nav-dropdown">
-                    <a href="#" class="nav-link dropdown-toggle active" data-translate="nav.guides">Guías</a>
-                    <div class="dropdown-menu">
-                        <a href="/how-to-choose-broker.html" class="dropdown-item" data-translate="nav.guideChooseBroker">Cómo Elegir un Broker</a>
-                        <a href="/regulated-brokers-latam.html" class="dropdown-item" data-translate="nav.guideRegulatedBrokers">Brokers Regulados</a>
-                        <a href="/trading-platforms-latam.html" class="dropdown-item" data-translate="nav.guideTradingPlatforms">Plataformas de Trading</a>
-                        <a href="/payment-methods-latam.html" class="dropdown-item" data-translate="nav.guidePaymentMethods">Métodos de Pago</a>
-                        <a href="/broker-comparison.html" class="dropdown-item active" data-translate="nav.guideCompareBrokers">Comparar Brokers</a>
-                    </div>
+            
+                <li>
+                    <a href="/best-scalping-brokers.html" class="nav-link">
+                        <i class="fas fa-users"></i> Copy Trading
+                    </a>
                 </li>
-                <li><a href="/blog.html" class="nav-link" data-translate="nav.blog">Blog</a></li>
-                <li><a href="/#reviews" class="nav-link" data-translate="nav.reviews">Reseñas</a></li>
-                <li><a href="/#about" class="nav-link" data-translate="nav.about">Acerca de</a></li>
-                <li><a href="/#contact" class="nav-link" data-translate="nav.contact">Contacto</a></li>
-                <li class="language-selector">
-                    <button type="button" class="language-btn" id="languageBtn">
-                        <i class="fas fa-globe"></i>
-                        <span id="currentLanguage">🇺🇸 English</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="language-dropdown" id="languageDropdown" style="display: none;">
-                        <div class="language-option" data-lang="en">
-                            <span class="flag">🇺🇸</span>
-                            <span>English</span>
-                        </div>
-                        <div class="language-option" data-lang="es">
-                            <span class="flag">🇲🇽</span>
-                            <span>Español</span>
-                        </div>
-                    </div>
+            
+                <li>
+                    <a href="/reviews.html" class="nav-link">
+                        <i class="fas fa-star"></i> Reseñas
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="#contact" class="nav-link">
+                        <i class="fas fa-envelope"></i> Contacto
+                    </a>
                 </li>
             </ul>
             <div class="nav-toggle">

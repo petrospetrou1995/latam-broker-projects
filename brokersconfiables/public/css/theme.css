@@ -47,3 +47,43 @@ body {
     border-color: var(--primary-color);
     border-width: 2px;
 }
+
+
+
+/* Trust Badges Layout - BrokersConfiables */
+.layout-trust-badges .brokers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.layout-trust-badges .broker-card {
+    border: 2px solid var(--secondary-color);
+    border-radius: 12px;
+    position: relative;
+    padding-top: 50px;
+}
+
+.layout-trust-badges .broker-card::before {
+    content: "✓ Verificado";
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--secondary-color);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.layout-trust-badges .nav-menu {
+    display: flex;
+    gap: 12px;
+}
+
+.layout-trust-badges .nav-link {
+    padding: 10px 16px;
+    border-radius: 6px;
+    background: rgba(46, 125, 50, 0.1);
+}

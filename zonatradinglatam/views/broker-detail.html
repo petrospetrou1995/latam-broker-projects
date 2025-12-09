@@ -11,7 +11,7 @@
     <link href="/css/brokers.css" rel="stylesheet">
     <link href="/css/broker-detail.css" rel="stylesheet">
     </head>
-<body>
+<body class="layout-speed-focused">
     <!-- Breadcrumb Navigation -->
     <nav class="breadcrumb-nav" aria-label="Breadcrumb">
         <div class="container">
@@ -45,44 +45,52 @@
                 </a>
             </div>
             <ul class="nav-menu">
-                <li><a href="/" class="nav-link" data-translate="nav.home">Inicio</a></li>
+                <li>
+                    <a href="/" class="nav-link">
+                        <i class="fas fa-home"></i> Inicio
+                    </a>
+                </li>
+            
                 <li class="nav-dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-translate="nav.brokers">Brokers</a>
+                    <a href="#" class="nav-link dropdown-toggle">
+                        <i class="fas fa-bolt"></i> Day Trading
+                    </a>
                     <div class="dropdown-menu">
-                        <a href="/brokers" class="dropdown-item" data-translate="nav.allBrokers">Todos los Brokers</a>
+            <a href="/best-day-trading-brokers.html" class="dropdown-item">Brokers Rápidos</a><a href="/brokers.html" class="dropdown-item">Velocidad Ejecución</a><a href="/forex-trading.html" class="dropdown-item">Ping LATAM</a>
                     </div>
                 </li>
+            
                 <li class="nav-dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-translate="nav.categories">Categorías</a>
+                    <a href="#" class="nav-link dropdown-toggle">
+                        <i class="fas fa-exchange-alt"></i> Forex Majors
+                    </a>
                     <div class="dropdown-menu">
-                        <a href="/forex-trading" class="dropdown-item" data-translate="nav.forex">Forex</a>
-                        <a href="/stocks-trading" class="dropdown-item" data-translate="nav.stocks">Acciones</a>
-                        <a href="/crypto-trading" class="dropdown-item" data-translate="nav.crypto">Criptomonedas</a>
-                        <a href="/cfd-trading" class="dropdown-item" data-translate="nav.cfds">CFDs</a>
-                        <a href="/commodities-trading" class="dropdown-item" data-translate="nav.commodities">Commodities</a>
-                        <a href="/education-training" class="dropdown-item" data-translate="nav.education">Educación y Capacitación</a>
+            <a href="/forex-trading.html" class="dropdown-item">USD/MXN</a><a href="/forex-trading.html" class="dropdown-item">USD/BRL</a><a href="/forex-trading.html" class="dropdown-item">USD/CLP</a>
                     </div>
                 </li>
-                <li><a href="/blog" class="nav-link" data-translate="nav.blog">Blog</a></li>
-                <li><a href="/#reviews" class="nav-link" data-translate="nav.reviews">Reseñas</a></li>
-                <li><a href="/#about" class="nav-link" data-translate="nav.about">Acerca de</a></li>
-                <li><a href="/#contact" class="nav-link" data-translate="nav.contact">Contacto</a></li>
-                <li class="language-selector">
-                    <button type="button" class="language-btn" id="languageBtn">
-                        <i class="fas fa-globe"></i>
-                        <span id="currentLanguage">🇺🇸 English</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="language-dropdown" id="languageDropdown" style="display: none;">
-                        <div class="language-option" data-lang="en">
-                            <span class="flag">🇺🇸</span>
-                            <span>English</span>
-                        </div>
-                        <div class="language-option" data-lang="es">
-                            <span class="flag">🇲🇽</span>
-                            <span>Español</span>
-                        </div>
-                    </div>
+            
+                <li>
+                    <a href="/trading-platforms-latam.html" class="nav-link">
+                        <i class="fas fa-desktop"></i> Plataformas
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/best-scalping-brokers.html" class="nav-link">
+                        <i class="fas fa-signal"></i> Señales
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/best-mobile-trading-apps.html" class="nav-link">
+                        <i class="fas fa-mobile-alt"></i> Apps Móviles
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/reviews.html" class="nav-link">
+                        <i class="fas fa-star"></i> Reseñas
+                    </a>
                 </li>
             </ul>
         </div>

@@ -47,3 +47,38 @@ body {
     border-color: var(--primary-color);
     border-width: 2px;
 }
+
+
+
+/* Speed Focused Layout - ZonaTradingLatam */
+.layout-speed-focused .brokers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 15px;
+}
+
+.layout-speed-focused .broker-card {
+    border: 2px solid transparent;
+    background: linear-gradient(135deg, var(--card-background) 0%, rgba(0, 212, 255, 0.05) 100%);
+    transition: all 0.2s;
+}
+
+.layout-speed-focused .broker-card:hover {
+    border-color: var(--primary-color);
+    transform: scale(1.02);
+}
+
+.layout-speed-focused .nav-menu {
+    display: flex;
+    gap: 8px;
+}
+
+.layout-speed-focused .nav-link {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    border-bottom: 2px solid transparent;
+}
+
+.layout-speed-focused .nav-link:hover {
+    border-bottom-color: var(--primary-color);
+}
