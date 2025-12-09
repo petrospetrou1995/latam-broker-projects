@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - LatamBrokerReviews</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="/css/admin.css" rel="stylesheet">
+</head>
+<body class="admin-body">
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fas fa-chart-line"></i>
+                <h2>LatamBrokerReviews</h2>
+            </div>
+            <button class="sidebar-toggle" id="sidebarToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <ul class="sidebar-menu">
+            <li class="menu-item active" data-section="dashboard">
+                <a href="#" class="menu-link">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span data-translate="admin.dashboard">Panel de Control</span>
+                </a>
+            </li>
+            <li class="menu-item" data-section="brokers">
+                <a href="#" class="menu-link">
+                    <i class="fas fa-building"></i>
+                    <span data-translate="admin.brokers">Brokers</span>
+                </a>
+            </li>
+            <li class="menu-item" data-section="reviews">
+                <a href="#" class="menu-link">
+                    <i class="fas fa-star"></i>
+                    <span data-translate="admin.reviews">Reseñas</span>
+                </a>
+            </li>
+            <li class="menu-item" data-section="categories">
+                <a href="#" class="menu-link">
+                    <i class="fas fa-tags"></i>
+                    <span data-translate="admin.categories">Categorías</span>
+                </a>
+            </li>
+            <li class="menu-item" data-section="contacts">
+                <a href="#" class="menu-link">
+                    <i class="fas fa-envelope"></i>
+                    <span data-translate="admin.contacts">Contactos</span>
+                </a>
+            </li>
+            <li class="menu-item" data-section="ai">
+                <a href="#" class="menu-link">
+                    <i class="fas fa-robot"></i>
+                    <span>IA & APIs</span>
+                </a>
+            </li>
+            <li class="menu-item" data-section="settings">
+                <a href="#" class="menu-link">
+                    <i class="fas fa-cog"></i>
+                    <span data-translate="admin.settings">Configuración</span>
+                </a>
+            </li>
+        </ul>
+        
+        <div class="sidebar-footer">
+            <button class="logout-btn" onclick="logout()">
+                <i class="fas fa-sign-out-alt"></i>
+                <span data-translate="admin.logout">Cerrar Sesión</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h1 class="page-title" id="pageTitle">Panel de Control</h1>
+            </div>
+            <div class="header-right">
+                <div class="user-info">
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="user-details">
+                        <span class="user-name" id="userName">Admin User</span>
+                        <span class="user-role">Administrador</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Dashboard Section -->
+        <section class="content-section active" id="dashboard">
+            <div class="dashboard-stats">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 id="totalBrokers">0</h3>
+                        <p data-translate="admin.totalBrokers">Total Brokers</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 id="totalReviews">0</h3>
+                        <p data-translate="admin.totalReviews">Total Reseñas</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 id="totalContacts">0</h3>
+                        <p data-translate="admin.totalContacts">Total Contactos</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 id="pendingReviews">0</h3>
+                        <p data-translate="admin.pendingReviews">Reseñas Pendientes</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-content">
+                <div class="dashboard-grid">
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h3>Reseñas Recientes</h3>
+                            <a href="#" class="view-all">Ver todas</a>
+                        </div>
+                        <div class="card-content">
+                            <div class="recent-reviews" id="recentReviews">
+                                <!-- Recent reviews will be loaded here -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h3>Contactos Recientes</h3>
+                            <a href="#" class="view-all">Ver todos</a>
+                        </div>
+                        <div class="card-content">
+                            <div class="recent-contacts" id="recentContacts">
+                                <!-- Recent contacts will be loaded here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brokers Section -->
+        <section class="content-section" id="brokers">
+            <div class="section-header">
+                <h2>Gestionar Brokers</h2>
+                <button class="btn btn-primary" onclick="showAddBrokerModal()">
+                    <i class="fas fa-plus"></i>
+                    Agregar Broker
+                </button>
+            </div>
+            
+            <div class="brokers-table">
+                <div class="table-header">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Buscar brokers..." id="brokerSearch">
+                    </div>
+                    <div class="table-actions">
+                        <button class="btn btn-secondary">
+                            <i class="fas fa-filter"></i>
+                            Filtrar
+                        </button>
+                        <button class="btn btn-secondary">
+                            <i class="fas fa-download"></i>
+                            Exportar
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="table-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Logo</th>
+                                <th>Nombre</th>
+                                <th>Categoría</th>
+                                <th>Calificación</th>
+                                <th>Reseñas</th>
+                                <th>Estado</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="brokersTableBody">
+                            <!-- Brokers will be loaded here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="content-section" id="reviews">
+            <div class="section-header">
+                <h2>Gestionar Reseñas</h2>
+                <div class="review-filters">
+                    <select id="reviewStatusFilter">
+                        <option value="">Todos los estados</option>
+                        <option value="pending">Pendientes</option>
+                        <option value="approved">Aprobadas</option>
+                        <option value="rejected">Rechazadas</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="reviews-table">
+                <div class="table-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Usuario</th>
+                                <th>Broker</th>
+                                <th>Calificación</th>
+                                <th>Título</th>
+                                <th>Estado</th>
+                                <th>Fecha</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="reviewsTableBody">
+                            <!-- Reviews will be loaded here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="content-section" id="categories">
+            <div class="section-header">
+                <h2>Gestionar Categorías</h2>
+                <button class="btn btn-primary" onclick="showAddCategoryModal()">
+                    <i class="fas fa-plus"></i>
+                    Agregar Categoría
+                </button>
+            </div>
+            
+            <div class="categories-grid" id="categoriesGrid">
+                <!-- Categories will be loaded here -->
+            </div>
+        </section>
+
+        <!-- Contacts Section -->
+        <section class="content-section" id="contacts">
+            <div class="section-header">
+                <h2>Gestionar Contactos</h2>
+                <div class="contact-filters">
+                    <select id="contactStatusFilter">
+                        <option value="">Todos los estados</option>
+                        <option value="new">Nuevos</option>
+                        <option value="in-progress">En Progreso</option>
+                        <option value="resolved">Resueltos</option>
+                        <option value="closed">Cerrados</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="contacts-table">
+                <div class="table-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Email</th>
+                                <th>Asunto</th>
+                                <th>Estado</th>
+                                <th>Prioridad</th>
+                                <th>Fecha</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="contactsTableBody">
+                            <!-- Contacts will be loaded here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Section -->
+        <section class="content-section" id="ai">
+            <div class="section-header">
+                <h2>Integración de IA y APIs</h2>
+                <p class="section-description">Configura y gestiona las integraciones de inteligencia artificial y APIs externas.</p>
+            </div>
+            
+            <div class="ai-services">
+                <div class="service-card">
+                    <div class="service-header">
+                        <i class="fab fa-openai"></i>
+                        <h3>OpenAI</h3>
+                        <span class="status-badge active">Activo</span>
+                    </div>
+                    <p>Integración con GPT para análisis de reseñas y generación de contenido.</p>
+                    <div class="service-actions">
+                        <button class="btn btn-primary">Configurar</button>
+                        <button class="btn btn-secondary">Probar</button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>Anthropic Claude</h3>
+                        <span class="status-badge inactive">Inactivo</span>
+                    </div>
+                    <p>Claude para análisis avanzado de contenido y recomendaciones.</p>
+                    <div class="service-actions">
+                        <button class="btn btn-primary">Configurar</button>
+                        <button class="btn btn-secondary">Probar</button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <i class="fab fa-google"></i>
+                        <h3>Google AI</h3>
+                        <span class="status-badge inactive">Inactivo</span>
+                    </div>
+                    <p>Servicios de Google AI para traducción y análisis de sentimientos.</p>
+                    <div class="service-actions">
+                        <button class="btn btn-primary">Configurar</button>
+                        <button class="btn btn-secondary">Probar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Settings Section -->
+        <section class="content-section" id="settings">
+            <div class="section-header">
+                <h2>Configuración del Sistema</h2>
+            </div>
+            
+            <div class="settings-grid">
+                <div class="settings-card">
+                    <h3>Configuración General</h3>
+                    <form class="settings-form">
+                        <div class="form-group">
+                            <label>Nombre del Sitio</label>
+                            <input type="text" value="LatamBrokerReviews">
+                        </div>
+                        <div class="form-group">
+                            <label>Descripción</label>
+                            <textarea>Plataforma líder en reseñas de brokers para América Latina</textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Email de Contacto</label>
+                            <input type="email" value="info@latambrokerreviews.com">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                    </form>
+                </div>
+
+                <div class="settings-card">
+                    <h3>Configuración de IA</h3>
+                    <form class="settings-form">
+                        <div class="form-group">
+                            <label>Moderación Automática</label>
+                            <div class="toggle-switch">
+                                <input type="checkbox" id="autoModeration" checked>
+                                <label for="autoModeration"></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Análisis de Sentimientos</label>
+                            <div class="toggle-switch">
+                                <input type="checkbox" id="sentimentAnalysis" checked>
+                                <label for="sentimentAnalysis"></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Recomendaciones Personalizadas</label>
+                            <div class="toggle-switch">
+                                <input type="checkbox" id="personalizedRecommendations">
+                                <label for="personalizedRecommendations"></label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Guardar Configuración</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modals -->
+    <div id="addBrokerModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Agregar Nuevo Broker</h3>
+                <button class="close" onclick="closeModal('addBrokerModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="addBrokerForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Nombre del Broker</label>
+                            <input type="text" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Categoría</label>
+                            <select name="category" required>
+                                <option value="forex">Forex</option>
+                                <option value="stocks">Acciones</option>
+                                <option value="crypto">Criptomonedas</option>
+                                <option value="cfd">CFDs</option>
+                                <option value="commodities">Commodities</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Descripción</label>
+                        <textarea name="description" rows="4" required></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Sitio Web</label>
+                            <input type="url" name="website" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Países</label>
+                            <input type="text" name="countries" placeholder="México, Colombia, Argentina...">
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" onclick="closeModal('addBrokerModal')">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Agregar Broker</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="addCategoryModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Agregar Nueva Categoría</h3>
+                <button class="close" onclick="closeModal('addCategoryModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="addCategoryForm">
+                    <div class="form-group">
+                        <label>Nombre de la Categoría</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Descripción</label>
+                        <textarea name="description" rows="3" required></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Color</label>
+                            <input type="color" name="color" value="#007bff">
+                        </div>
+                        <div class="form-group">
+                            <label>Ícono</label>
+                            <input type="text" name="icon" placeholder="fas fa-chart-line">
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" onclick="closeModal('addCategoryModal')">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Agregar Categoría</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/languages.js"></script>
+    <script src="/js/admin.js"></script>
+</body>
+</html>

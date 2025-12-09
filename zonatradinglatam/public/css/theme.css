@@ -1,0 +1,48 @@
+/* ZonaTradingLatam Theme Styles */
+:root {
+    --primary-color: #00D4FF;
+    --secondary-color: #0099CC;
+    --accent-color: #FF3366;
+    --background-color: #000000;
+    --text-color: #FFFFFF;
+    --card-background: #1A1A1A;
+}
+
+/* Override base styles with theme */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    background: var(--primary-color) !important;
+}
+
+.navbar .nav-link {
+    color: #000000 !important;
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: #000000;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.broker-card {
+    background: var(--card-background);
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.broker-card.featured {
+    border-color: var(--primary-color);
+    border-width: 2px;
+}
