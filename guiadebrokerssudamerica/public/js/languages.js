@@ -29,6 +29,35 @@ const languages = {
             guideTradingPlatforms: 'Plataformas de Trading',
             guidePaymentMethods: 'Métodos de Pago',
             guideCompareBrokers: 'Comparar Brokers'
+                    inicio: 'Inicio',
+            países: 'Países',
+            argentina: 'Argentina',
+            uruguay: 'Uruguay',
+            paraguay: 'Paraguay',
+            cobertura: 'Cobertura',
+            oroyplata: 'Oro y Plata',
+            stablecoins: 'Stablecoins',
+            inflación: 'Inflación',
+            p2p: 'P2P',
+            transferencias: 'Transferencias',
+            brokers: 'Brokers',
+            noticias: 'Noticias',
+},
+        // Custom Navigation Translations
+        customNav:         {
+                  "Inicio": "Inicio",
+                  "Países": "Países",
+                  "Argentina": "Argentina",
+                  "Uruguay": "Uruguay",
+                  "Paraguay": "Paraguay",
+                  "Cobertura": "Cobertura",
+                  "Oro y Plata": "Oro y Plata",
+                  "Stablecoins": "Stablecoins",
+                  "Inflación": "Inflación",
+                  "P2P": "P2P",
+                  "Transferencias": "Transferencias",
+                  "Brokers": "Brokers",
+                  "Noticias": "Noticias"
         },
         
         // Hero Section
@@ -3560,6 +3589,35 @@ const languages = {
             guideTradingPlatforms: 'Trading Platforms',
             guidePaymentMethods: 'Payment Methods',
             guideCompareBrokers: 'Compare Brokers'
+                    inicio: 'Home',
+            países: 'Countries',
+            argentina: 'Argentina',
+            uruguay: 'Uruguay',
+            paraguay: 'Paraguay',
+            cobertura: 'Hedging',
+            oroyplata: 'Gold and Silver',
+            stablecoins: 'Stablecoins',
+            inflación: 'Inflation',
+            p2p: 'P2P',
+            transferencias: 'Transfers',
+            brokers: 'Brokers',
+            noticias: 'News',
+},
+        // Custom Navigation Translations
+        customNav:         {
+                  "Inicio": "Home",
+                  "Países": "Countries",
+                  "Argentina": "Argentina",
+                  "Uruguay": "Uruguay",
+                  "Paraguay": "Paraguay",
+                  "Cobertura": "Hedging",
+                  "Oro y Plata": "Gold and Silver",
+                  "Stablecoins": "Stablecoins",
+                  "Inflación": "Inflation",
+                  "P2P": "P2P",
+                  "Transferencias": "Transfers",
+                  "Brokers": "Brokers",
+                  "Noticias": "News"
         },
         
         // Hero Section

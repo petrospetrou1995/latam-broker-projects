@@ -29,6 +29,35 @@ const languages = {
             guideTradingPlatforms: 'Plataformas de Trading',
             guidePaymentMethods: 'Métodos de Pago',
             guideCompareBrokers: 'Comparar Brokers'
+                    inicio: 'Inicio',
+            accionesusa: 'Acciones USA',
+            cómocomprar: 'Cómo Comprar',
+            brokersrecomendados: 'Brokers Recomendados',
+            accionesfraccionarias: 'Acciones Fraccionarias',
+            crypto: 'Crypto',
+            onrampslocales: 'On-Ramps Locales',
+            mxncopclpausdt: 'MXN/COP/CLP a USDT',
+            wallets: 'Wallets',
+            etfs: 'ETFs',
+            neobancos: 'Neo-Bancos',
+            blog: 'Blog',
+            contacto: 'Contacto',
+},
+        // Custom Navigation Translations
+        customNav:         {
+                  "Inicio": "Inicio",
+                  "Acciones USA": "Acciones USA",
+                  "Cómo Comprar": "Cómo Comprar",
+                  "Brokers Recomendados": "Brokers Recomendados",
+                  "Acciones Fraccionarias": "Acciones Fraccionarias",
+                  "Crypto": "Crypto",
+                  "On-Ramps Locales": "On-Ramps Locales",
+                  "MXN/COP/CLP a USDT": "MXN/COP/CLP a USDT",
+                  "Wallets": "Wallets",
+                  "ETFs": "ETFs",
+                  "Neo-Bancos": "Neo-Bancos",
+                  "Blog": "Blog",
+                  "Contacto": "Contacto"
         },
         
         // Hero Section
@@ -3560,6 +3589,35 @@ const languages = {
             guideTradingPlatforms: 'Trading Platforms',
             guidePaymentMethods: 'Payment Methods',
             guideCompareBrokers: 'Compare Brokers'
+                    inicio: 'Home',
+            accionesusa: 'US Stocks',
+            cómocomprar: 'How to Buy',
+            brokersrecomendados: 'Recommended Brokers',
+            accionesfraccionarias: 'Fractional Shares',
+            crypto: 'Crypto',
+            onrampslocales: 'Local On-Ramps',
+            mxncopclpausdt: 'MXN/COP/CLP to USDT',
+            wallets: 'Wallets',
+            etfs: 'ETFs',
+            neobancos: 'Neo-Banks',
+            blog: 'Blog',
+            contacto: 'Contact',
+},
+        // Custom Navigation Translations
+        customNav:         {
+                  "Inicio": "Home",
+                  "Acciones USA": "US Stocks",
+                  "Cómo Comprar": "How to Buy",
+                  "Brokers Recomendados": "Recommended Brokers",
+                  "Acciones Fraccionarias": "Fractional Shares",
+                  "Crypto": "Crypto",
+                  "On-Ramps Locales": "Local On-Ramps",
+                  "MXN/COP/CLP a USDT": "MXN/COP/CLP to USDT",
+                  "Wallets": "Wallets",
+                  "ETFs": "ETFs",
+                  "Neo-Bancos": "Neo-Banks",
+                  "Blog": "Blog",
+                  "Contacto": "Contact"
         },
         
         // Hero Section

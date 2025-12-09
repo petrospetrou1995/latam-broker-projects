@@ -211,7 +211,119 @@
                 missingTranslations.push(key);
                 console.log('No translation found for key:', key);
             }
+        
+    // Enhanced navigation translation function
+    function translateNavigationItems(lang) {
+        if (typeof languages === 'undefined' || !languages[lang]) return;
+        
+        const langData = languages[lang];
+        const customNav = langData.customNav || {};
+        
+        // Translate navigation links (including those with icons)
+        document.querySelectorAll('.nav-link').forEach(link => {
+            const icon = link.querySelector('i');
+            const textNode = Array.from(link.childNodes).find(node => 
+                node.nodeType === Node.TEXT_NODE && node.textContent.trim()
+            );
+            
+            if (textNode) {
+                const originalText = textNode.textContent.trim();
+                if (customNav[originalText]) {
+                    const newText = customNav[originalText];
+                    if (icon) {
+                        link.innerHTML = icon.outerHTML + ' ' + newText;
+                    } else {
+                        textNode.textContent = ' ' + newText;
+                    }
+                }
+            } else {
+                // Handle links where text is directly in the link
+                const fullText = link.textContent.trim();
+                const iconMatch = fullText.match(/^(.+?)\s+(.+)$/);
+                if (iconMatch) {
+                    const iconText = iconMatch[1];
+                    const text = iconMatch[2];
+                    if (customNav[text]) {
+                        if (icon) {
+                            link.innerHTML = icon.outerHTML + ' ' + customNav[text];
+                        }
+                    }
+                } else if (customNav[fullText]) {
+                    if (icon) {
+                        link.innerHTML = icon.outerHTML + ' ' + customNav[fullText];
+                    } else {
+                        link.textContent = customNav[fullText];
+                    }
+                }
+            }
         });
+        
+        // Translate dropdown items
+        document.querySelectorAll('.dropdown-item').forEach(item => {
+            const text = item.textContent.trim();
+            if (customNav[text]) {
+                item.textContent = customNav[text];
+            }
+        });
+        
+        // Translate dropdown toggle text
+        document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+            const icon = toggle.querySelector('i');
+            const textNodes = Array.from(toggle.childNodes).filter(node => 
+                node.nodeType === Node.TEXT_NODE && node.textContent.trim()
+            );
+            
+            textNodes.forEach(textNode => {
+                const text = textNode.textContent.trim();
+                if (customNav[text]) {
+                    if (icon) {
+                        toggle.innerHTML = icon.outerHTML + ' ' + customNav[text];
+                    } else {
+                        textNode.textContent = ' ' + customNav[text];
+                    }
+                }
+            });
+        });
+    }
+    
+    // Call translateNavigationItems when language changes
+    const originalSwitchLanguage = window.switchLanguage || function(lang) {
+        localStorage.setItem('language', lang);
+        if (typeof applyTranslations === 'function') {
+            applyTranslations(lang);
+        }
+        translateNavigationItems(lang);
+        window.dispatchEvent(new CustomEvent('languageChanged', {
+            detail: { language: lang }
+        }));
+    };
+    
+    // Override switchLanguage if it exists
+    if (typeof switchLanguage !== 'undefined') {
+        const originalFn = switchLanguage;
+        window.switchLanguage = function(lang) {
+            originalFn(lang);
+            setTimeout(() => translateNavigationItems(lang), 100);
+        };
+    }
+    
+    // Listen for language change events
+    window.addEventListener('languageChanged', function(event) {
+        setTimeout(() => translateNavigationItems(event.detail.language), 100);
+    });
+    
+    // Initial translation on page load
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() {
+            const lang = localStorage.getItem('language') || 'en';
+            setTimeout(() => translateNavigationItems(lang), 500);
+        });
+    } else {
+        const lang = localStorage.getItem('language') || 'en';
+        setTimeout(() => translateNavigationItems(lang), 500);
+    }
+
+});
         
         // Specifically handle dropdown menu items that might be hidden
         const dropdownItems = document.querySelectorAll('.dropdown-item[data-translate]');
@@ -713,3 +825,44 @@
         }, 2000);
     });
 })();
+
+// Translate navigation items
+function translateNavigation() {
+    const currentLang = localStorage.getItem('language') || 'en';
+    const langData = languages[currentLang];
+    
+    if (!langData || !langData.customNav) return;
+    
+    // Translate all nav links
+    document.querySelectorAll('.nav-link').forEach(link => {
+        const text = link.textContent.trim();
+        if (langData.customNav[text]) {
+            const icon = link.querySelector('i');
+            if (icon) {
+                link.innerHTML = icon.outerHTML + ' ' + langData.customNav[text];
+            } else {
+                link.textContent = langData.customNav[text];
+            }
+        }
+    });
+    
+    // Translate dropdown items
+    document.querySelectorAll('.dropdown-item').forEach(item => {
+        const text = item.textContent.trim();
+        if (langData.customNav[text]) {
+            item.textContent = langData.customNav[text];
+        }
+    });
+}
+
+// Call translateNavigation when language changes
+document.addEventListener('languageChanged', function() {
+    translateNavigation();
+});
+
+// Initial translation
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', translateNavigation);
+} else {
+    translateNavigation();
+}

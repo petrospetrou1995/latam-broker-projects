@@ -29,6 +29,35 @@ const languages = {
             guideTradingPlatforms: 'Plataformas de Trading',
             guidePaymentMethods: 'Métodos de Pago',
             guideCompareBrokers: 'Comparar Brokers'
+                    inicio: 'Inicio',
+            méxico: 'México',
+            spei: 'SPEI',
+            cnbv: 'CNBV',
+            impuestos: 'Impuestos',
+            latam: 'LATAM',
+            otropaíses: 'Otros Países',
+            guíasporpaís: 'Guías por País',
+            brokersusa: 'Brokers USA',
+            reportes: 'Reportes',
+            tradingmxn: 'Trading MXN',
+            kitsinicio: 'Kits Inicio',
+            contacto: 'Contacto',
+},
+        // Custom Navigation Translations
+        customNav:         {
+                  "Inicio": "Inicio",
+                  "México": "México",
+                  "SPEI": "SPEI",
+                  "CNBV": "CNBV",
+                  "Impuestos": "Impuestos",
+                  "LATAM": "LATAM",
+                  "Otros Países": "Otros Países",
+                  "Guías por País": "Guías por País",
+                  "Brokers USA": "Brokers USA",
+                  "Reportes": "Reportes",
+                  "Trading MXN": "Trading MXN",
+                  "Kits Inicio": "Kits Inicio",
+                  "Contacto": "Contacto"
         },
         
         // Hero Section
@@ -3560,6 +3589,35 @@ const languages = {
             guideTradingPlatforms: 'Trading Platforms',
             guidePaymentMethods: 'Payment Methods',
             guideCompareBrokers: 'Compare Brokers'
+                    inicio: 'Home',
+            méxico: 'Mexico',
+            spei: 'SPEI',
+            cnbv: 'CNBV',
+            impuestos: 'Taxes',
+            latam: 'LATAM',
+            otropaíses: 'Other Countries',
+            guíasporpaís: 'Guides by Country',
+            brokersusa: 'US Brokers',
+            reportes: 'Reports',
+            tradingmxn: 'Trading MXN',
+            kitsinicio: 'Starter Kits',
+            contacto: 'Contact',
+},
+        // Custom Navigation Translations
+        customNav:         {
+                  "Inicio": "Home",
+                  "México": "Mexico",
+                  "SPEI": "SPEI",
+                  "CNBV": "CNBV",
+                  "Impuestos": "Taxes",
+                  "LATAM": "LATAM",
+                  "Otros Países": "Other Countries",
+                  "Guías por País": "Guides by Country",
+                  "Brokers USA": "US Brokers",
+                  "Reportes": "Reports",
+                  "Trading MXN": "Trading MXN",
+                  "Kits Inicio": "Starter Kits",
+                  "Contacto": "Contact"
         },
         
         // Hero Section

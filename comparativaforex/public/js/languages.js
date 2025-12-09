@@ -29,6 +29,35 @@ const languages = {
             guideTradingPlatforms: 'Plataformas de Trading',
             guidePaymentMethods: 'Métodos de Pago',
             guideCompareBrokers: 'Comparar Brokers'
+                    inicio: 'Inicio',
+            spreads: 'Spreads',
+            tablasenvivo: 'Tablas en Vivo',
+            compararcostos: 'Comparar Costos',
+            mejoresspreads: 'Mejores Spreads',
+            apalancamiento: 'Apalancamiento',
+            altoapalancamiento: 'Alto Apalancamiento',
+            1:500+: '1:500+',
+            swapfree: 'Swap-Free',
+            ecnvsmm: 'ECN vs MM',
+            paresexóticos: 'Pares Exóticos',
+            brokers: 'Brokers',
+            reseñas: 'Reseñas',
+},
+        // Custom Navigation Translations
+        customNav:         {
+                  "Inicio": "Inicio",
+                  "Spreads": "Spreads",
+                  "Tablas en Vivo": "Tablas en Vivo",
+                  "Comparar Costos": "Comparar Costos",
+                  "Mejores Spreads": "Mejores Spreads",
+                  "Apalancamiento": "Apalancamiento",
+                  "Alto Apalancamiento": "Alto Apalancamiento",
+                  "1:500+": "1:500+",
+                  "Swap-Free": "Swap-Free",
+                  "ECN vs MM": "ECN vs MM",
+                  "Pares Exóticos": "Pares Exóticos",
+                  "Brokers": "Brokers",
+                  "Reseñas": "Reseñas"
         },
         
         // Hero Section
@@ -3560,6 +3589,35 @@ const languages = {
             guideTradingPlatforms: 'Trading Platforms',
             guidePaymentMethods: 'Payment Methods',
             guideCompareBrokers: 'Compare Brokers'
+                    inicio: 'Home',
+            spreads: 'Spreads',
+            tablasenvivo: 'Live Tables',
+            compararcostos: 'Compare Costs',
+            mejoresspreads: 'Best Spreads',
+            apalancamiento: 'Leverage',
+            altoapalancamiento: 'High Leverage',
+            1:500+: '1:500+',
+            swapfree: 'Swap-Free',
+            ecnvsmm: 'ECN vs MM',
+            paresexóticos: 'Exotic Pairs',
+            brokers: 'Brokers',
+            reseñas: 'Reviews',
+},
+        // Custom Navigation Translations
+        customNav:         {
+                  "Inicio": "Home",
+                  "Spreads": "Spreads",
+                  "Tablas en Vivo": "Live Tables",
+                  "Comparar Costos": "Compare Costs",
+                  "Mejores Spreads": "Best Spreads",
+                  "Apalancamiento": "Leverage",
+                  "Alto Apalancamiento": "High Leverage",
+                  "1:500+": "1:500+",
+                  "Swap-Free": "Swap-Free",
+                  "ECN vs MM": "ECN vs MM",
+                  "Pares Exóticos": "Exotic Pairs",
+                  "Brokers": "Brokers",
+                  "Reseñas": "Reviews"
         },
         
         // Hero Section

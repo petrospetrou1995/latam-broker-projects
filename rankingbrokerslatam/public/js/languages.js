@@ -29,6 +29,33 @@ const languages = {
             guideTradingPlatforms: 'Plataformas de Trading',
             guidePaymentMethods: 'Métodos de Pago',
             guideCompareBrokers: 'Comparar Brokers'
+                    home: 'Inicio',
+            top10: 'Top 10',
+            rankingmensual: 'Ranking Mensual',
+            porpaís: 'Por País',
+            mejoresspreads: 'Mejores Spreads',
+            comparar: 'Comparar',
+            comparar3brokers: 'Comparar 3 Brokers',
+            spreadsenvivo: 'Spreads en Vivo',
+            métodosdepago: 'Métodos de Pago',
+            copytrading: 'Copy Trading',
+            reseñas: 'Reseñas',
+            contacto: 'Contacto',
+},
+        // Custom Navigation Translations
+        customNav:         {
+                  "Home": "Inicio",
+                  "Top 10": "Top 10",
+                  "Ranking Mensual": "Ranking Mensual",
+                  "Por País": "Por País",
+                  "Mejores Spreads": "Mejores Spreads",
+                  "Comparar": "Comparar",
+                  "Comparar 3 Brokers": "Comparar 3 Brokers",
+                  "Spreads en Vivo": "Spreads en Vivo",
+                  "Métodos de Pago": "Métodos de Pago",
+                  "Copy Trading": "Copy Trading",
+                  "Reseñas": "Reseñas",
+                  "Contacto": "Contacto"
         },
         
         // Hero Section
@@ -3560,6 +3587,33 @@ const languages = {
             guideTradingPlatforms: 'Trading Platforms',
             guidePaymentMethods: 'Payment Methods',
             guideCompareBrokers: 'Compare Brokers'
+                    home: 'Home',
+            top10: 'Top 10',
+            rankingmensual: 'Monthly Ranking',
+            porpaís: 'By Country',
+            mejoresspreads: 'Best Spreads',
+            comparar: 'Compare',
+            comparar3brokers: 'Compare 3 Brokers',
+            spreadsenvivo: 'Live Spreads',
+            métodosdepago: 'Payment Methods',
+            copytrading: 'Copy Trading',
+            reseñas: 'Reviews',
+            contacto: 'Contact',
+},
+        // Custom Navigation Translations
+        customNav:         {
+                  "Home": "Home",
+                  "Top 10": "Top 10",
+                  "Ranking Mensual": "Monthly Ranking",
+                  "Por País": "By Country",
+                  "Mejores Spreads": "Best Spreads",
+                  "Comparar": "Compare",
+                  "Comparar 3 Brokers": "Compare 3 Brokers",
+                  "Spreads en Vivo": "Live Spreads",
+                  "Métodos de Pago": "Payment Methods",
+                  "Copy Trading": "Copy Trading",
+                  "Reseñas": "Reviews",
+                  "Contacto": "Contact"
         },
         
         // Hero Section

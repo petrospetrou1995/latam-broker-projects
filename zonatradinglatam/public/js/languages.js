@@ -29,6 +29,35 @@ const languages = {
             guideTradingPlatforms: 'Plataformas de Trading',
             guidePaymentMethods: 'Métodos de Pago',
             guideCompareBrokers: 'Comparar Brokers'
+                    inicio: 'Inicio',
+            daytrading: 'Day Trading',
+            brokersrápidos: 'Brokers Rápidos',
+            velocidadejecución: 'Velocidad Ejecución',
+            pinglatam: 'Ping LATAM',
+            forexmajors: 'Forex Majors',
+            usdmxn: 'USD/MXN',
+            usdbrl: 'USD/BRL',
+            usdclp: 'USD/CLP',
+            plataformas: 'Plataformas',
+            señales: 'Señales',
+            appsmóviles: 'Apps Móviles',
+            reseñas: 'Reseñas',
+},
+        // Custom Navigation Translations
+        customNav:         {
+                  "Inicio": "Inicio",
+                  "Day Trading": "Day Trading",
+                  "Brokers Rápidos": "Brokers Rápidos",
+                  "Velocidad Ejecución": "Velocidad Ejecución",
+                  "Ping LATAM": "Ping LATAM",
+                  "Forex Majors": "Forex Majors",
+                  "USD/MXN": "USD/MXN",
+                  "USD/BRL": "USD/BRL",
+                  "USD/CLP": "USD/CLP",
+                  "Plataformas": "Plataformas",
+                  "Señales": "Señales",
+                  "Apps Móviles": "Apps Móviles",
+                  "Reseñas": "Reseñas"
         },
         
         // Hero Section
@@ -3560,6 +3589,35 @@ const languages = {
             guideTradingPlatforms: 'Trading Platforms',
             guidePaymentMethods: 'Payment Methods',
             guideCompareBrokers: 'Compare Brokers'
+                    inicio: 'Home',
+            daytrading: 'Day Trading',
+            brokersrápidos: 'Fast Brokers',
+            velocidadejecución: 'Execution Speed',
+            pinglatam: 'LATAM Ping',
+            forexmajors: 'Forex Majors',
+            usdmxn: 'USD/MXN',
+            usdbrl: 'USD/BRL',
+            usdclp: 'USD/CLP',
+            plataformas: 'Platforms',
+            señales: 'Signals',
+            appsmóviles: 'Mobile Apps',
+            reseñas: 'Reviews',
+},
+        // Custom Navigation Translations
+        customNav:         {
+                  "Inicio": "Home",
+                  "Day Trading": "Day Trading",
+                  "Brokers Rápidos": "Fast Brokers",
+                  "Velocidad Ejecución": "Execution Speed",
+                  "Ping LATAM": "LATAM Ping",
+                  "Forex Majors": "Forex Majors",
+                  "USD/MXN": "USD/MXN",
+                  "USD/BRL": "USD/BRL",
+                  "USD/CLP": "USD/CLP",
+                  "Plataformas": "Platforms",
+                  "Señales": "Signals",
+                  "Apps Móviles": "Mobile Apps",
+                  "Reseñas": "Reviews"
         },
         
         // Hero Section

@@ -29,6 +29,35 @@ const languages = {
             guideTradingPlatforms: 'Plataformas de Trading',
             guidePaymentMethods: 'Métodos de Pago',
             guideCompareBrokers: 'Comparar Brokers'
+                    inicio: 'Inicio',
+            guías: 'Guías',
+            pasoapaso: 'Paso a Paso',
+            porpaís: 'Por País',
+            primeraoperación: 'Primera Operación',
+            recursos: 'Recursos',
+            academia: 'Academia',
+            cuentasdemo: 'Cuentas Demo',
+            glosario: 'Glosario',
+            matchmaker: 'Matchmaker',
+            brokers: 'Brokers',
+            blog: 'Blog',
+            sobrenosotros: 'Sobre Nosotros',
+},
+        // Custom Navigation Translations
+        customNav:         {
+                  "Inicio": "Inicio",
+                  "Guías": "Guías",
+                  "Paso a Paso": "Paso a Paso",
+                  "Por País": "Por País",
+                  "Primera Operación": "Primera Operación",
+                  "Recursos": "Recursos",
+                  "Academia": "Academia",
+                  "Cuentas Demo": "Cuentas Demo",
+                  "Glosario": "Glosario",
+                  "Matchmaker": "Matchmaker",
+                  "Brokers": "Brokers",
+                  "Blog": "Blog",
+                  "Sobre Nosotros": "Sobre Nosotros"
         },
         
         // Hero Section
@@ -3560,6 +3589,35 @@ const languages = {
             guideTradingPlatforms: 'Trading Platforms',
             guidePaymentMethods: 'Payment Methods',
             guideCompareBrokers: 'Compare Brokers'
+                    inicio: 'Home',
+            guías: 'Guides',
+            pasoapaso: 'Step by Step',
+            porpaís: 'By Country',
+            primeraoperación: 'First Trade',
+            recursos: 'Resources',
+            academia: 'Academy',
+            cuentasdemo: 'Demo Accounts',
+            glosario: 'Glossary',
+            matchmaker: 'Matchmaker',
+            brokers: 'Brokers',
+            blog: 'Blog',
+            sobrenosotros: 'About Us',
+},
+        // Custom Navigation Translations
+        customNav:         {
+                  "Inicio": "Home",
+                  "Guías": "Guides",
+                  "Paso a Paso": "Step by Step",
+                  "Por País": "By Country",
+                  "Primera Operación": "First Trade",
+                  "Recursos": "Resources",
+                  "Academia": "Academy",
+                  "Cuentas Demo": "Demo Accounts",
+                  "Glosario": "Glossary",
+                  "Matchmaker": "Matchmaker",
+                  "Brokers": "Brokers",
+                  "Blog": "Blog",
+                  "Sobre Nosotros": "About Us"
         },
         
         // Hero Section

@@ -29,6 +29,35 @@ const languages = {
             guideTradingPlatforms: 'Plataformas de Trading',
             guidePaymentMethods: 'Métodos de Pago',
             guideCompareBrokers: 'Comparar Brokers'
+                    inicio: 'Inicio',
+            seguridad: 'Seguridad',
+            alertasdeestafas: 'Alertas de Estafas',
+            verificadorregulación: 'Verificador Regulación',
+            protecciónfondos: 'Protección Fondos',
+            verificación: 'Verificación',
+            reseñasverificadas: 'Reseñas Verificadas',
+            esseguro: '¿Es Seguro?',
+            soporteespañol: 'Soporte Español',
+            brokers: 'Brokers',
+            guías: 'Guías',
+            blog: 'Blog',
+            contacto: 'Contacto',
+},
+        // Custom Navigation Translations
+        customNav:         {
+                  "Inicio": "Inicio",
+                  "Seguridad": "Seguridad",
+                  "Alertas de Estafas": "Alertas de Estafas",
+                  "Verificador Regulación": "Verificador Regulación",
+                  "Protección Fondos": "Protección Fondos",
+                  "Verificación": "Verificación",
+                  "Reseñas Verificadas": "Reseñas Verificadas",
+                  "¿Es Seguro?": "¿Es Seguro?",
+                  "Soporte Español": "Soporte Español",
+                  "Brokers": "Brokers",
+                  "Guías": "Guías",
+                  "Blog": "Blog",
+                  "Contacto": "Contacto"
         },
         
         // Hero Section
@@ -3560,6 +3589,35 @@ const languages = {
             guideTradingPlatforms: 'Trading Platforms',
             guidePaymentMethods: 'Payment Methods',
             guideCompareBrokers: 'Compare Brokers'
+                    inicio: 'Home',
+            seguridad: 'Security',
+            alertasdeestafas: 'Scam Alerts',
+            verificadorregulación: 'Regulation Checker',
+            protecciónfondos: 'Fund Protection',
+            verificación: 'Verification',
+            reseñasverificadas: 'Verified Reviews',
+            esseguro: 'Is It Safe?',
+            soporteespañol: 'Spanish Support',
+            brokers: 'Brokers',
+            guías: 'Guides',
+            blog: 'Blog',
+            contacto: 'Contact',
+},
+        // Custom Navigation Translations
+        customNav:         {
+                  "Inicio": "Home",
+                  "Seguridad": "Security",
+                  "Alertas de Estafas": "Scam Alerts",
+                  "Verificador Regulación": "Regulation Checker",
+                  "Protección Fondos": "Fund Protection",
+                  "Verificación": "Verification",
+                  "Reseñas Verificadas": "Verified Reviews",
+                  "¿Es Seguro?": "Is It Safe?",
+                  "Soporte Español": "Spanish Support",
+                  "Brokers": "Brokers",
+                  "Guías": "Guides",
+                  "Blog": "Blog",
+                  "Contacto": "Contact"
         },
         
         // Hero Section
