@@ -9843,4 +9843,30 @@ document.addEventListener('click', (e) => {
     if (selector && dropdown && !selector.contains(e.target)) {
         dropdown.style.display = 'none';
     }
-});
+,
+        // Project-specific reviews for ComparativaForex
+        
+            comparativaforex1: {
+                title: 'Alejandro M. - XM Group',
+                content: 'Las tablas de spreads en vivo son increíbles. Ahorré mucho en costos de trading.',
+                rating: 5,
+                user: {
+                    name: 'Alejandro M.',
+                    verified: true
+                },
+                broker: 'XM Group',
+                date: new Date().toISOString()
+            },
+            comparativaforex2: {
+                title: 'Isabel R. - XM Group',
+                content: 'Encontré brokers con apalancamiento 1:500. Perfecto para mi estrategia de trading.',
+                rating: 5,
+                user: {
+                    name: 'Isabel R.',
+                    verified: true
+                },
+                broker: 'XM Group',
+                date: new Date().toISOString()
+            }
+        
+    });

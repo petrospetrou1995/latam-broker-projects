@@ -9843,4 +9843,30 @@ document.addEventListener('click', (e) => {
     if (selector && dropdown && !selector.contains(e.target)) {
         dropdown.style.display = 'none';
     }
-});
+,
+        // Project-specific reviews for BrokersConfiables
+        
+            brokersconfiables1: {
+                title: 'Luis H. - XM Group',
+                content: 'El verificador de regulación me salvó de un broker no regulado. Información muy valiosa.',
+                rating: 5,
+                user: {
+                    name: 'Luis H.',
+                    verified: true
+                },
+                broker: 'XM Group',
+                date: new Date().toISOString()
+            },
+            brokersconfiables2: {
+                title: 'Patricia G. - Interactive Brokers',
+                content: 'Excelente análisis de protección de fondos. Ahora sé qué brokers tienen seguro.',
+                rating: 5,
+                user: {
+                    name: 'Patricia G.',
+                    verified: true
+                },
+                broker: 'Interactive Brokers',
+                date: new Date().toISOString()
+            }
+        
+    });

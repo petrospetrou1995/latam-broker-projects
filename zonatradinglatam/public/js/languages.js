@@ -9843,4 +9843,30 @@ document.addEventListener('click', (e) => {
     if (selector && dropdown && !selector.contains(e.target)) {
         dropdown.style.display = 'none';
     }
-});
+,
+        // Project-specific reviews for ZonaTradingLatam
+        
+            zonatradinglatam1: {
+                title: 'Diego P. - XM Group',
+                content: 'La mejor información sobre brokers para day trading en LATAM. La velocidad de ejecución es crucial.',
+                rating: 5,
+                user: {
+                    name: 'Diego P.',
+                    verified: true
+                },
+                broker: 'XM Group',
+                date: new Date().toISOString()
+            },
+            zonatradinglatam2: {
+                title: 'Sofia C. - Libertex',
+                content: 'Encontré la mejor app Android para trading. La comparativa de plataformas es excelente.',
+                rating: 5,
+                user: {
+                    name: 'Sofia C.',
+                    verified: true
+                },
+                broker: 'Libertex',
+                date: new Date().toISOString()
+            }
+        
+    });

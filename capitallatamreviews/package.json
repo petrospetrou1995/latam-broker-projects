@@ -1,7 +1,7 @@
 {
   "name": "capitallatamreviews",
   "version": "1.0.0",
-  "description": "Capital LATAM Reviews - Institutional Broker Reviews",
+  "description": "CapitalLatamReviews - Cuentas profesionales, DMA, API trading, auditorías de seguridad de 50 puntos y servicios de gestión",
   "main": "build-static.js",
   "scripts": {
     "build": "npm install",

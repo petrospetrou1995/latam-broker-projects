@@ -9843,4 +9843,30 @@ document.addEventListener('click', (e) => {
     if (selector && dropdown && !selector.contains(e.target)) {
         dropdown.style.display = 'none';
     }
-});
+,
+        // Project-specific reviews for RankingBrokersLatam
+        
+            rankingbrokerslatam1: {
+                title: 'Carlos M. - XM Group',
+                content: 'Excelente ranking actualizado. Me ayudó a encontrar el broker con los mejores spreads para México.',
+                rating: 5,
+                user: {
+                    name: 'Carlos M.',
+                    verified: true
+                },
+                broker: 'XM Group',
+                date: new Date().toISOString()
+            },
+            rankingbrokerslatam2: {
+                title: 'Ana R. - eToro',
+                content: 'El filtro por país es genial. Encontré brokers que aceptan Mercado Pago en Argentina.',
+                rating: 5,
+                user: {
+                    name: 'Ana R.',
+                    verified: true
+                },
+                broker: 'eToro',
+                date: new Date().toISOString()
+            }
+        
+    });

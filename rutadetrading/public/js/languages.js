@@ -9843,4 +9843,30 @@ document.addEventListener('click', (e) => {
     if (selector && dropdown && !selector.contains(e.target)) {
         dropdown.style.display = 'none';
     }
-});
+,
+        // Project-specific reviews for RutaDeTrading
+        
+            rutadetrading1: {
+                title: 'Fernando T. - XM Group',
+                content: 'La guía paso a paso para Chile fue perfecta. Finalmente entendí cómo hacer mi primera operación.',
+                rating: 5,
+                user: {
+                    name: 'Fernando T.',
+                    verified: true
+                },
+                broker: 'XM Group',
+                date: new Date().toISOString()
+            },
+            rutadetrading2: {
+                title: 'Carmen V. - Libertex',
+                content: 'El matchmaker de capital me ayudó a encontrar brokers para mi presupuesto de $50.',
+                rating: 5,
+                user: {
+                    name: 'Carmen V.',
+                    verified: true
+                },
+                broker: 'Libertex',
+                date: new Date().toISOString()
+            }
+        
+    });

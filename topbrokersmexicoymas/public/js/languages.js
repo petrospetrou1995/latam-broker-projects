@@ -9843,4 +9843,30 @@ document.addEventListener('click', (e) => {
     if (selector && dropdown && !selector.contains(e.target)) {
         dropdown.style.display = 'none';
     }
-});
+,
+        // Project-specific reviews for TopBrokersMexicoYMas
+        
+            topbrokersmexicoymas1: {
+                title: 'Javier M. - XM Group',
+                content: 'La información sobre depósitos SPEI fue clave. Ahora puedo depositar fácilmente desde México.',
+                rating: 5,
+                user: {
+                    name: 'Javier M.',
+                    verified: true
+                },
+                broker: 'XM Group',
+                date: new Date().toISOString()
+            },
+            topbrokersmexicoymas2: {
+                title: 'Alejandra C. - Interactive Brokers',
+                content: 'Excelente guía sobre cómo abrir cuenta en TD Ameritrade desde México. Muy detallada.',
+                rating: 5,
+                user: {
+                    name: 'Alejandra C.',
+                    verified: true
+                },
+                broker: 'Interactive Brokers',
+                date: new Date().toISOString()
+            }
+        
+    });

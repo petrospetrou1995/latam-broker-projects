@@ -1,7 +1,7 @@
 {
   "name": "comparativaforex",
   "version": "1.0.0",
-  "description": "Comparativa Forex - Forex Broker Comparison",
+  "description": "ComparativaForex - Tablas de spreads en vivo, brokers con alto apalancamiento, cuentas swap-free y análisis técnico pro",
   "main": "build-static.js",
   "scripts": {
     "build": "npm install",

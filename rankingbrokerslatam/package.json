@@ -1,7 +1,7 @@
 {
   "name": "rankingbrokerslatam",
   "version": "1.0.0",
-  "description": "Ranking Brokers LATAM - Top 10 Brokers Ranking",
+  "description": "RankingBrokersLatam - Rankings actualizados mensualmente de los mejores brokers. Filtra por país, compara spreads y encuen",
   "main": "build-static.js",
   "scripts": {
     "build": "npm install",

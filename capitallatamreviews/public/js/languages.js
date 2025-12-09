@@ -9843,4 +9843,30 @@ document.addEventListener('click', (e) => {
     if (selector && dropdown && !selector.contains(e.target)) {
         dropdown.style.display = 'none';
     }
-});
+,
+        // Project-specific reviews for CapitalLatamReviews
+        
+            capitallatamreviews1: {
+                title: 'Dr. Carlos R. - Interactive Brokers',
+                content: 'El análisis de DMA y Level 2 data es profesional. Perfecto para trading institucional.',
+                rating: 5,
+                user: {
+                    name: 'Dr. Carlos R.',
+                    verified: true
+                },
+                broker: 'Interactive Brokers',
+                date: new Date().toISOString()
+            },
+            capitallatamreviews2: {
+                title: 'Ing. María S. - Interactive Brokers',
+                content: 'La auditoría de seguridad de 50 puntos es exhaustiva. Muy útil para traders profesionales.',
+                rating: 5,
+                user: {
+                    name: 'Ing. María S.',
+                    verified: true
+                },
+                broker: 'Interactive Brokers',
+                date: new Date().toISOString()
+            }
+        
+    });

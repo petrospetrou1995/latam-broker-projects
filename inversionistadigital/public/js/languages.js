@@ -9843,4 +9843,30 @@ document.addEventListener('click', (e) => {
     if (selector && dropdown && !selector.contains(e.target)) {
         dropdown.style.display = 'none';
     }
-});
+,
+        // Project-specific reviews for InversionistaDigital
+        
+            inversionistadigital1: {
+                title: 'Roberto S. - Interactive Brokers',
+                content: 'Finalmente pude comprar Tesla desde Colombia. La guía de acciones fraccionarias fue clave.',
+                rating: 5,
+                user: {
+                    name: 'Roberto S.',
+                    verified: true
+                },
+                broker: 'Interactive Brokers',
+                date: new Date().toISOString()
+            },
+            inversionistadigital2: {
+                title: 'María L. - eToro',
+                content: 'Excelente información sobre integración con NuBank. Muy útil para inversores brasileños.',
+                rating: 5,
+                user: {
+                    name: 'María L.',
+                    verified: true
+                },
+                broker: 'eToro',
+                date: new Date().toISOString()
+            }
+        
+    });

@@ -1,7 +1,7 @@
 {
   "name": "guiadebrokerssudamerica",
   "version": "1.0.0",
-  "description": "Guía de Brokers Sudamérica - Southern Cone Guide",
+  "description": "GuiadeBrokersSudamerica - Guías específicas para Argentina, Uruguay y Paraguay. Brokers para cobertura contra inflación, tradi",
   "main": "build-static.js",
   "scripts": {
     "build": "npm install",

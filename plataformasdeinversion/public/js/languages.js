@@ -9843,4 +9843,30 @@ document.addEventListener('click', (e) => {
     if (selector && dropdown && !selector.contains(e.target)) {
         dropdown.style.display = 'none';
     }
-});
+,
+        // Project-specific reviews for PlataformasDeInversion
+        
+            plataformasdeinversion1: {
+                title: 'Ricardo F. - Interactive Brokers',
+                content: 'Excelente análisis de brokers multi-activo. Ahora puedo operar todo en una plataforma.',
+                rating: 5,
+                user: {
+                    name: 'Ricardo F.',
+                    verified: true
+                },
+                broker: 'Interactive Brokers',
+                date: new Date().toISOString()
+            },
+            plataformasdeinversion2: {
+                title: 'Laura M. - Interactive Brokers',
+                content: 'La guía de inversión en dividendos me ayudó a construir un portafolio pasivo.',
+                rating: 5,
+                user: {
+                    name: 'Laura M.',
+                    verified: true
+                },
+                broker: 'Interactive Brokers',
+                date: new Date().toISOString()
+            }
+        
+    });

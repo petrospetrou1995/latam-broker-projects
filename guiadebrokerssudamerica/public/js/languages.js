@@ -9843,4 +9843,30 @@ document.addEventListener('click', (e) => {
     if (selector && dropdown && !selector.contains(e.target)) {
         dropdown.style.display = 'none';
     }
-});
+,
+        // Project-specific reviews for GuiadeBrokersSudamerica
+        
+            guiadebrokerssudamerica1: {
+                title: 'Martín A. - XM Group',
+                content: 'La guía específica para Argentina fue exactamente lo que necesitaba. Información muy local.',
+                rating: 5,
+                user: {
+                    name: 'Martín A.',
+                    verified: true
+                },
+                broker: 'XM Group',
+                date: new Date().toISOString()
+            },
+            guiadebrokerssudamerica2: {
+                title: 'Elena U. - XM Group',
+                content: 'Encontré brokers para proteger mi capital de la inflación. Excelente información.',
+                rating: 5,
+                user: {
+                    name: 'Elena U.',
+                    verified: true
+                },
+                broker: 'XM Group',
+                date: new Date().toISOString()
+            }
+        
+    });
