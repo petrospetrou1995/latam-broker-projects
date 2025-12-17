@@ -1,0 +1,83 @@
+/* InversionistaDigital - modern-tech Theme */
+/* InversionistaDigital Theme Styles */
+:root {
+    --primary-color: #6366F1;
+    --secondary-color: #8B5CF6;
+    --accent-color: #EC4899;
+    --background-color: #0F172A;
+    --text-color: #F1F5F9;
+    --card-background: #1E293B;
+}
+
+/* Override base styles with theme */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    background: var(--primary-color) !important;
+}
+
+.navbar .nav-link {
+    color: #0F172A !important;
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: #0F172A;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.broker-card {
+    background: var(--card-background);
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.broker-card.featured {
+    border-color: var(--primary-color);
+    border-width: 2px;
+}
+
+
+
+/* Modern Card Layout - InversionistaDigital */
+.layout-modern-card .brokers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.layout-modern-card .broker-card {
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+
+.layout-modern-card .broker-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.layout-modern-card .nav-menu {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.layout-modern-card .nav-link {
+    padding: 12px 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+}

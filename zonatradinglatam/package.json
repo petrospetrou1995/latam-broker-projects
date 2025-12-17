@@ -1,0 +1,23 @@
+{
+  "name": "zonatradinglatam",
+  "version": "1.0.0",
+  "description": "ZonaTradingLatam - Brokers para day trading, análisis de velocidad de ejecución, guías de Forex majors y las mejores ap",
+  "main": "build-static.js",
+  "scripts": {
+    "build": "npm install",
+    "build:static": "node build-static.js",
+    "serve:static": "npx serve dist -p 3000"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "keywords": [
+    "broker",
+    "reviews",
+    "latin-america",
+    "trading",
+    "libertex",
+    "static-site"
+  ],
+  "author": "LatamBrokerReviews",
+  "license": "MIT"
+}

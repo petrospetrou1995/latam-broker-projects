@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation Debug</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .debug-section { margin: 20px 0; padding: 20px; border: 1px solid #ccc; }
+        .language-selector { margin: 20px 0; }
+        .language-btn { padding: 10px 20px; background: #007bff; color: white; border: none; cursor: pointer; }
+        .language-dropdown { display: none; background: white; border: 1px solid #ccc; padding: 10px; }
+        .language-option { padding: 10px; cursor: pointer; }
+        .language-option:hover { background: #f0f0f0; }
+    </style>
+</head>
+<body>
+    <h1>Translation Debug Page</h1>
+    
+    <div class="debug-section">
+        <h2>Language Selector</h2>
+        <div class="language-selector">
+            <button class="language-btn" id="languageBtn">
+                <i class="fas fa-globe"></i>
+                <span id="currentLanguage">🇺🇸 English</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="language-dropdown" id="languageDropdown" style="display: none;">
+                <div class="language-option" data-lang="en">
+                    <span class="flag">🇺🇸</span>
+                    <span>English</span>
+                </div>
+                <div class="language-option" data-lang="es">
+                    <span class="flag">🇲🇽</span>
+                    <span>Español</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="debug-section">
+        <h2>Test Elements</h2>
+        <p data-translate="nav.home">Home</p>
+        <p data-translate="nav.brokers">Brokers</p>
+        <p data-translate="nav.reviews">Reviews</p>
+        <p data-translate="hero.title">Hero Title</p>
+        <p data-translate="hero.subtitle">Hero Subtitle</p>
+    </div>
+    
+    <div class="debug-section">
+        <h2>Console Output</h2>
+        <div id="console-output"></div>
+    </div>
+
+    <script src="/js/languages.js"></script>
+    <script src="/js/language-switcher.js"></script>
+    <script>
+        // Override console.log to show in page
+        const originalLog = console.log;
+        const originalError = console.error;
+        const outputDiv = document.getElementById('console-output');
+        
+        console.log = function(...args) {
+            originalLog.apply(console, args);
+            outputDiv.innerHTML += '<div style="color: blue;">LOG: ' + args.join(' ') + '</div>';
+        };
+        
+        console.error = function(...args) {
+            originalError.apply(console, args);
+            outputDiv.innerHTML += '<div style="color: red;">ERROR: ' + args.join(' ') + '</div>';
+        };
+        
+        // Test if languages object is available
+        setTimeout(() => {
+            console.log('Languages object available:', typeof languages !== 'undefined');
+            if (typeof languages !== 'undefined') {
+                console.log('Available languages:', Object.keys(languages));
+                console.log('English nav.home:', languages.en?.nav?.home);
+                console.log('Spanish nav.home:', languages.es?.nav?.home);
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
