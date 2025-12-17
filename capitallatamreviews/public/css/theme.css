@@ -1,0 +1,84 @@
+/* CapitalLatamReviews - institutional Theme */
+/* CapitalLatamReviews Theme Styles */
+:root {
+    --primary-color: #1A237E;
+    --secondary-color: #283593;
+    --accent-color: #5C6BC0;
+    --background-color: #FAFAFA;
+    --text-color: #212121;
+    --card-background: #FFFFFF;
+}
+
+/* Override base styles with theme */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    background: var(--primary-color) !important;
+}
+
+.navbar .nav-link {
+    color: #FAFAFA !important;
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: #FAFAFA;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.broker-card {
+    background: var(--card-background);
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.broker-card.featured {
+    border-color: var(--primary-color);
+    border-width: 2px;
+}
+
+
+
+/* Professional Layout - CapitalLatamReviews */
+.layout-professional .brokers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.layout-professional .broker-card {
+    border: 1px solid rgba(26, 35, 126, 0.2);
+    border-radius: 8px;
+    background: var(--card-background);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s;
+}
+
+.layout-professional .broker-card:hover {
+    box-shadow: 0 8px 24px rgba(26, 35, 126, 0.15);
+    border-color: var(--primary-color);
+}
+
+.layout-professional .nav-menu {
+    display: flex;
+    gap: 8px;
+}
+
+.layout-professional .nav-link {
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-weight: 500;
+    border: 1px solid rgba(26, 35, 126, 0.2);
+    background: rgba(26, 35, 126, 0.05);
+}

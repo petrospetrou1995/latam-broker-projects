@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .language-selector { margin: 20px 0; }
+        .language-btn { 
+            background: #007bff; 
+            color: white; 
+            border: none; 
+            padding: 10px 20px; 
+            border-radius: 5px; 
+            cursor: pointer; 
+        }
+        .language-dropdown { 
+            background: white; 
+            border: 1px solid #ddd; 
+            border-radius: 5px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+            margin-top: 5px; 
+        }
+        .language-option { 
+            display: block; 
+            padding: 10px 20px; 
+            text-decoration: none; 
+            color: #333; 
+        }
+        .language-option:hover { background: #f8f9fa; }
+    </style>
+</head>
+<body>
+    <h1>Language Switching Test</h1>
+    
+    <div class="language-selector">
+        <button class="language-btn" onclick="toggleLanguageDropdown()">
+            <span id="currentLanguage">🇺🇸 English</span>
+        </button>
+        <div class="language-dropdown" id="languageDropdown" style="display: none;">
+            <a href="#" onclick="switchLanguage('en')" class="language-option">
+                <span class="flag">🇺🇸</span>
+                <span>English</span>
+            </a>
+            <a href="#" onclick="switchLanguage('es')" class="language-option">
+                <span class="flag">🇲🇽</span>
+                <span>Español</span>
+            </a>
+        </div>
+    </div>
+    
+    <p>Current language: <span id="currentLangDisplay">English</span></p>
+    
+    <script>
+        function toggleLanguageDropdown() {
+            const dropdown = document.getElementById('languageDropdown');
+            if (dropdown) {
+                dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+            }
+        }
+        
+        function switchLanguage(lang) {
+            localStorage.setItem('language', lang);
+            
+            const currentLangSpan = document.getElementById('currentLanguage');
+            const currentLangDisplay = document.getElementById('currentLangDisplay');
+            
+            if (currentLangSpan) {
+                currentLangSpan.textContent = lang === 'en' ? '🇺🇸 English' : '🇲🇽 Español';
+            }
+            
+            if (currentLangDisplay) {
+                currentLangDisplay.textContent = lang === 'en' ? 'English' : 'Español';
+            }
+            
+            const dropdown = document.getElementById('languageDropdown');
+            if (dropdown) {
+                dropdown.style.display = 'none';
+            }
+            
+            alert('Language switched to: ' + (lang === 'en' ? 'English' : 'Español'));
+        }
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('language') || 'en';
+            const currentLangSpan = document.getElementById('currentLanguage');
+            const currentLangDisplay = document.getElementById('currentLangDisplay');
+            
+            if (currentLangSpan) {
+                currentLangSpan.textContent = savedLang === 'en' ? '🇺🇸 English' : '🇲🇽 Español';
+            }
+            
+            if (currentLangDisplay) {
+                currentLangDisplay.textContent = savedLang === 'en' ? 'English' : 'Español';
+            }
+        });
+    </script>
+</body>
+</html>

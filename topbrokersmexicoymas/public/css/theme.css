@@ -1,0 +1,86 @@
+/* TopBrokersMexicoYMas - mexico Theme */
+/* TopBrokersMexicoYMas Theme Styles */
+:root {
+    --primary-color: #006847;
+    --secondary-color: #CE1126;
+    --accent-color: #FFFFFF;
+    --background-color: #FFFFFF;
+    --text-color: #1A1A1A;
+    --card-background: #F5F5F5;
+}
+
+/* Override base styles with theme */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    background: var(--primary-color) !important;
+}
+
+.navbar .nav-link {
+    color: #FFFFFF !important;
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: #FFFFFF;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.broker-card {
+    background: var(--card-background);
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.broker-card.featured {
+    border-color: var(--primary-color);
+    border-width: 2px;
+}
+
+
+
+/* Mexico Focused Layout - TopBrokersMexicoYMas */
+.layout-mexico-focused .brokers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.layout-mexico-focused .broker-card {
+    border: 3px solid;
+    border-image: linear-gradient(135deg, #006847 0%, #CE1126 100%) 1;
+    border-radius: 12px;
+    position: relative;
+}
+
+.layout-mexico-focused .broker-card::before {
+    content: "🇲🇽";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+}
+
+.layout-mexico-focused .nav-menu {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.layout-mexico-focused .nav-link {
+    padding: 10px 18px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #006847 0%, #CE1126 100%);
+    color: white;
+}

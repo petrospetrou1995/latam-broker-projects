@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="blog.title">Blog - LatamBrokerReviews</title>
+    <meta name="description" data-translate="blog.description" content="Artículos, guías y noticias sobre brokers, trading e inversiones para Latinoamérica.">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+<body class="layout-speed-focused">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="/">
+                    <h2><i class="fas fa-chart-line"></i> LatamBrokerReviews</h2>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li>
+                    <a href="/" class="nav-link" data-translate="nav.inicio"><i class="fas fa-home"></i> Inicio</a>
+                </li>
+            
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-translate="nav.daytrading"><i class="fas fa-bolt"></i> Day Trading</a>
+                    <div class="dropdown-menu">
+            <a href="/best-day-trading-brokers.html" class="dropdown-item" data-translate="nav.brokersrápidos">Brokers Rápidos</a><a href="/brokers.html" class="dropdown-item" data-translate="nav.velocidadejecución">Velocidad Ejecución</a><a href="/forex-trading.html" class="dropdown-item" data-translate="nav.pinglatam">Ping LATAM</a>
+                    </div>
+                </li>
+            
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-translate="nav.forexmajors"><i class="fas fa-exchange-alt"></i> Forex Majors</a>
+                    <div class="dropdown-menu">
+            <a href="/forex-trading.html" class="dropdown-item" data-translate="nav.usd/mxn">USD/MXN</a><a href="/forex-trading.html" class="dropdown-item" data-translate="nav.usd/brl">USD/BRL</a><a href="/forex-trading.html" class="dropdown-item" data-translate="nav.usd/clp">USD/CLP</a>
+                    </div>
+                </li>
+            
+                <li>
+                    <a href="/trading-platforms-latam.html" class="nav-link" data-translate="nav.plataformas"><i class="fas fa-desktop"></i> Plataformas</a>
+                </li>
+            
+                <li>
+                    <a href="/best-scalping-brokers.html" class="nav-link" data-translate="nav.señales"><i class="fas fa-signal"></i> Señales</a>
+                </li>
+            
+                <li>
+                    <a href="/best-mobile-trading-apps.html" class="nav-link" data-translate="nav.appsmóviles"><i class="fas fa-mobile-alt"></i> Apps Móviles</a>
+                </li>
+            
+                <li>
+                    <a href="/reviews.html" class="nav-link" data-translate="nav.reseñas"><i class="fas fa-star"></i> Reseñas</a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 100px 0; text-align: center; color: white;">
+        <div class="container">
+            <h1 style="font-size: 3rem; margin-bottom: 20px;" data-translate="blog.hero.title">Blog de Trading</h1>
+            <p style="font-size: 1.3rem; opacity: 0.9;" data-translate="blog.hero.subtitle">Guías, análisis y noticias sobre brokers y trading para Latinoamérica</p>
+        </div>
+    </section>
+
+    <!-- Blog Posts Section -->
+    <section class="content-section" style="padding: 60px 0;">
+        <div class="container">
+            <div class="blog-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 30px; margin-top: 40px;">
+                <!-- Blog posts will be loaded dynamically from blog-post.js via blog-list.js -->
+                <div id="blog-loading" style="grid-column: 1 / -1; text-align: center; padding: 40px; color: #666;">
+                    <i class="fas fa-spinner fa-spin" style="font-size: 2rem; margin-bottom: 20px;"></i>
+                    <p>Cargando artículos del blog...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-translate="footer.title">LatamBrokerReviews</h3>
+                    <p data-translate="footer.description">La plataforma líder en reseñas de brokers para traders de América Latina.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer.quickLinks">Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="/" data-translate="nav.home">Inicio</a></li>
+                        <li><a href="/brokers" data-translate="nav.brokers">Brokers</a></li>
+                        <li><a href="/blog" data-translate="nav.blog">Blog</a></li>
+                        <li><a href="/#reviews" data-translate="nav.reviews">Reseñas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer.categories">Categorías</h4>
+                    <ul>
+                        <li><a href="/forex-trading" data-translate="nav.forex">Forex</a></li>
+                        <li><a href="/stocks-trading" data-translate="nav.stocks">Acciones</a></li>
+                        <li><a href="/crypto-trading" data-translate="nav.crypto">Criptomonedas</a></li>
+                        <li><a href="/cfd-trading" data-translate="nav.cfds">CFDs</a></li>
+                        <li><a href="/commodities-trading" data-translate="nav.commodities">Commodities</a></li>
+                        <li><a href="/education-training" data-translate="nav.education">Educación</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-translate="footer.copyright">Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/js/languages.js"></script>
+    <script src="/js/blog-post.js"></script>
+    <script src="/js/blog-list.js"></script>
+    <script src="/js/language-switcher.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
+
+

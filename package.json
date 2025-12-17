@@ -1,0 +1,25 @@
+{
+  "name": "brokersconfiables.com",
+  "version": "1.0.0",
+  "description": "Brokers Confiables - Autoridad en seguridad de brokers. Alertas de estafas, verificador de regulación, protección de fondos y reseñas verificadas de usuarios reales.",
+  "main": "build-static.js",
+  "scripts": {
+    "build": "npm install",
+    "build:static": "node build-static.js",
+    "serve:static": "npx serve dist -p 3000",
+    "deploy": "npm run build:static && wrangler pages deploy dist --project-name=brokersconfiables"
+  },
+  "devDependencies": {
+    "wrangler": "^4.55.0"
+  },
+  "keywords": [
+    "broker",
+    "reviews",
+    "latin-america",
+    "trading",
+    "libertex",
+    "static-site"
+  ],
+  "author": "BrokersConfiables",
+  "license": "MIT"
+}

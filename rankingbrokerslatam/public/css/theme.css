@@ -1,0 +1,96 @@
+/* RankingBrokersLatam - leaderboard Theme */
+/* RankingBrokersLatam Theme Styles */
+:root {
+    --primary-color: #FF6B35;
+    --secondary-color: #004E89;
+    --accent-color: #FFA726;
+    --background-color: #FFFFFF;
+    --text-color: #1A1A1A;
+    --card-background: #F8F9FA;
+}
+
+/* Override base styles with theme */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    background: var(--primary-color) !important;
+}
+
+.navbar .nav-link {
+    color: #FFFFFF !important;
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: #FFFFFF;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.broker-card {
+    background: var(--card-background);
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.broker-card.featured {
+    border-color: var(--primary-color);
+    border-width: 2px;
+}
+
+
+
+/* Leaderboard Grid Layout - RankingBrokersLatam */
+.layout-leaderboard-grid .brokers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.layout-leaderboard-grid .broker-card {
+    border-left: 4px solid var(--primary-color);
+    position: relative;
+}
+
+.layout-leaderboard-grid .broker-card::before {
+    content: attr(data-rank);
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background: var(--primary-color);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.layout-leaderboard-grid .nav-menu {
+    display: flex;
+    gap: 15px;
+}
+
+.layout-leaderboard-grid .nav-link {
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.layout-leaderboard-grid .nav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
