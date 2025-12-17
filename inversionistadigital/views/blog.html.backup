@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="blog.pageTitle">Blog de Trading - LatamBrokerReviews</title>
+    <meta name="description" data-translate="blog.pageDescription" content="Artículos, guías y análisis sobre trading, brokers e inversiones en Latinoamérica. Mantente actualizado con las últimas tendencias del mercado.">
+    <meta name="keywords" content="blog trading, artículos trading, guías inversión, análisis mercado, noticias brokers">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://latambrokerreviews.com/blog">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://latambrokerreviews.com/blog">
+    <meta property="og:title" data-translate="blog.pageTitle" content="Blog de Trading - LatamBrokerReviews">
+    <meta property="og:description" data-translate="blog.hero.subtitle" content="Artículos, guías y análisis sobre trading, brokers e inversiones en Latinoamérica.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://latambrokerreviews.com/blog">
+    <meta property="twitter:title" data-translate="blog.pageTitle" content="Blog de Trading - LatamBrokerReviews">
+    <meta property="twitter:description" data-translate="blog.hero.subtitle" content="Artículos, guías y análisis sobre trading, brokers e inversiones en Latinoamérica.">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json" id="blog-structured-data">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "LatamBrokerReviews Blog",
+      "description": "Artículos, guías y análisis sobre trading, brokers e inversiones en Latinoamérica",
+      "url": "https://latambrokerreviews.com/blog",
+      "publisher": {
+        "@type": "Organization",
+        "name": "LatamBrokerReviews",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://latambrokerreviews.com/images/logo.png"
+        }
+      }
+    }
+    </script>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/category-pages.css" rel="stylesheet">
+    </head>
+<body>
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="/" itemprop="item">
+                        <span itemprop="name" data-translate="nav.home">Home</span>
+                    </a>
+                    <meta itemprop="position" content="1" />
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span itemprop="name" data-translate="nav.blog">Blog</span>
+                    <meta itemprop="position" content="2" />
+                </li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="/">
+                    <h2><i class="fas fa-chart-line"></i> LatamBrokerReviews</h2>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link" data-translate="nav.home">Inicio</a></li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-translate="nav.brokers">Brokers</a>
+                    <div class="dropdown-menu">
+                        <a href="/brokers" class="dropdown-item" data-translate="nav.allBrokers">Todos los Brokers</a>
+                    </div>
+                </li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-translate="nav.categories">Categorías</a>
+                    <div class="dropdown-menu">
+                        <a href="/forex-trading" class="dropdown-item" data-translate="nav.forex">Forex</a>
+                        <a href="/stocks-trading" class="dropdown-item" data-translate="nav.stocks">Acciones</a>
+                        <a href="/crypto-trading" class="dropdown-item" data-translate="nav.crypto">Criptomonedas</a>
+                        <a href="/cfd-trading" class="dropdown-item" data-translate="nav.cfds">CFDs</a>
+                        <a href="/commodities-trading" class="dropdown-item" data-translate="nav.commodities">Commodities</a>
+                        <a href="/education-training" class="dropdown-item" data-translate="nav.education">Educación y Capacitación</a>
+                    </div>
+                </li>
+                <li><a href="/blog" class="nav-link active" data-translate="nav.blog">Blog</a></li>
+                <li><a href="/#reviews" class="nav-link" data-translate="nav.reviews">Reseñas</a></li>
+                <li><a href="/#about" class="nav-link" data-translate="nav.about">Acerca de</a></li>
+                <li><a href="/#contact" class="nav-link" data-translate="nav.contact">Contacto</a></li>
+                <li class="language-selector">
+                    <button type="button" class="language-btn" id="languageBtn">
+                        <i class="fas fa-globe"></i>
+                        <span id="currentLanguage">🇺🇸 English</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="language-dropdown" id="languageDropdown" style="display: none;">
+                        <div class="language-option" data-lang="en">
+                            <span class="flag">🇺🇸</span>
+                            <span>English</span>
+                        </div>
+                        <div class="language-option" data-lang="es">
+                            <span class="flag">🇲🇽</span>
+                            <span>Español</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Blog Hero Section -->
+    <section class="category-hero" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-translate="blog.hero.title"><i class="fas fa-blog"></i> Blog de Trading</h1>
+                <p data-translate="blog.hero.subtitle">Artículos, guías y análisis sobre trading, brokers e inversiones en Latinoamérica. Mantente actualizado con las últimas tendencias del mercado.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Section -->
+    <section class="content-section" style="padding: 60px 0;">
+        <div class="container">
+            <div class="blog-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 30px; margin-top: 40px;">
+                <!-- Blog posts will be loaded dynamically from blog-post.js -->
+                <!-- Old hardcoded posts removed - now using dynamic loading -->
+                    <div style="height: 200px; overflow: hidden; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); position: relative;">
+                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=400&fit=crop" alt="Forex Trading" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; align-items: center; justify-content: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <i class="fas fa-chart-line" style="font-size: 48px; color: #fff;"></i>
+                        </div>
+                    </div>
+                    <div style="padding: 25px;">
+                        <div style="display: flex; gap: 15px; margin-bottom: 15px; font-size: 14px; color: #666;">
+                            <span><i class="fas fa-calendar"></i> 15 Dic 2024</span>
+                            <span><i class="fas fa-tag"></i> <span data-translate="blog.categories.forex">Forex</span></span>
+                        </div>
+                        <h3 style="margin-bottom: 10px; color: #333;" data-translate="blog.posts.forexGuide.title">Guía Completa de Forex Trading para Principiantes</h3>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 20px;" data-translate="blog.posts.forexGuide.description">Aprende los fundamentos del trading de divisas, desde conceptos básicos hasta estrategias avanzadas para traders latinoamericanos.</p>
+                        <a href="/blog/guia-forex-principiantes" class="btn btn-primary" style="display: inline-block;" data-translate="blog.readMore">Leer Más</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card" style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                    <div style="height: 200px; overflow: hidden; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); position: relative;">
+                        <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=400&fit=crop" alt="Cryptocurrencies" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; align-items: center; justify-content: center; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <i class="fab fa-bitcoin" style="font-size: 48px; color: #fff;"></i>
+                        </div>
+                    </div>
+                    <div style="padding: 25px;">
+                        <div style="display: flex; gap: 15px; margin-bottom: 15px; font-size: 14px; color: #666;">
+                            <span><i class="fas fa-calendar"></i> 10 Dic 2024</span>
+                            <span><i class="fas fa-tag"></i> <span data-translate="blog.categories.crypto">Crypto</span></span>
+                        </div>
+                        <h3 style="margin-bottom: 10px; color: #333;" data-translate="blog.posts.cryptoFuture.title">El Futuro de las Criptomonedas en Latinoamérica</h3>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 20px;" data-translate="blog.posts.cryptoFuture.description">Análisis de las tendencias regulatorias y oportunidades de inversión en criptomonedas para traders latinoamericanos.</p>
+                        <a href="/blog/futuro-criptomonedas-latam" class="btn btn-primary" style="display: inline-block;" data-translate="blog.readMore">Leer Más</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card" style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                    <div style="height: 200px; overflow: hidden; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); position: relative;">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=400&fit=crop" alt="Trading Education" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; align-items: center; justify-content: center; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <i class="fas fa-graduation-cap" style="font-size: 48px; color: #fff;"></i>
+                        </div>
+                    </div>
+                    <div style="padding: 25px;">
+                        <div style="display: flex; gap: 15px; margin-bottom: 15px; font-size: 14px; color: #666;">
+                            <span><i class="fas fa-calendar"></i> 5 Dic 2024</span>
+                            <span><i class="fas fa-tag"></i> <span data-translate="blog.categories.education">Educación</span></span>
+                        </div>
+                        <h3 style="margin-bottom: 10px; color: #333;" data-translate="blog.posts.commonMistakes.title">5 Errores Comunes que Debes Evitar al Empezar en Trading</h3>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 20px;" data-translate="blog.posts.commonMistakes.description">Conoce los errores más frecuentes que cometen los principiantes y cómo evitarlos para tener un mejor inicio en el trading.</p>
+                        <a href="/blog/errores-comunes-trading" class="btn btn-primary" style="display: inline-block;" data-translate="blog.readMore">Leer Más</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card" style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                    <div style="height: 200px; overflow: hidden; background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); position: relative;">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop" alt="Broker Selection" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; align-items: center; justify-content: center; background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <i class="fas fa-building" style="font-size: 48px; color: #fff;"></i>
+                        </div>
+                    </div>
+                    <div style="padding: 25px;">
+                        <div style="display: flex; gap: 15px; margin-bottom: 15px; font-size: 14px; color: #666;">
+                            <span><i class="fas fa-calendar"></i> 1 Dic 2024</span>
+                            <span><i class="fas fa-tag"></i> <span data-translate="blog.categories.brokers">Brokers</span></span>
+                        </div>
+                        <h3 style="margin-bottom: 10px; color: #333;" data-translate="blog.posts.chooseBroker.title">Cómo Elegir el Mejor Broker para Trading en 2024</h3>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 20px;" data-translate="blog.posts.chooseBroker.description">Guía completa para evaluar brokers: regulación, spreads, comisiones, plataformas y métodos de pago para traders latinoamericanos.</p>
+                        <a href="/blog/elegir-mejor-broker-2024" class="btn btn-primary" style="display: inline-block;" data-translate="blog.readMore">Leer Más</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card" style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                    <div style="height: 200px; overflow: hidden; background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); position: relative;">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&h=400&fit=crop" alt="Trading Security" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; align-items: center; justify-content: center; background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                            <i class="fas fa-shield-alt" style="font-size: 48px; color: #fff;"></i>
+                        </div>
+                    </div>
+                    <div style="padding: 25px;">
+                        <div style="display: flex; gap: 15px; margin-bottom: 15px; font-size: 14px; color: #666;">
+                            <span><i class="fas fa-calendar"></i> 28 Nov 2024</span>
+                            <span><i class="fas fa-tag"></i> <span data-translate="blog.categories.security">Seguridad</span></span>
+                        </div>
+                        <h3 style="margin-bottom: 10px; color: #333;" data-translate="blog.posts.security.title">Seguridad en Trading: Cómo Proteger tu Capital</h3>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 20px;" data-translate="blog.posts.security.description">Consejos esenciales sobre seguridad, gestión de riesgo y protección de fondos al operar con brokers online.</p>
+                        <a href="/blog/seguridad-trading-proteger-capital" class="btn btn-primary" style="display: inline-block;" data-translate="blog.readMore">Leer Más</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card" style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                    <div style="height: 200px; overflow: hidden; background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); position: relative;">
+                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=400&fit=crop" alt="Gold Trading" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; align-items: center; justify-content: center; background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                            <i class="fas fa-coins" style="font-size: 48px; color: #fff;"></i>
+                        </div>
+                    </div>
+                    <div style="padding: 25px;">
+                        <div style="display: flex; gap: 15px; margin-bottom: 15px; font-size: 14px; color: #666;">
+                            <span><i class="fas fa-calendar"></i> 25 Nov 2024</span>
+                            <span><i class="fas fa-tag"></i> <span data-translate="blog.categories.commodities">Commodities</span></span>
+                        </div>
+                        <h3 style="margin-bottom: 10px; color: #333;" data-translate="blog.posts.goldTrading.title">Trading de Oro: Guía Completa para Inversores</h3>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 20px;" data-translate="blog.posts.goldTrading.description">Todo lo que necesitas saber sobre invertir en oro: factores que afectan el precio, estrategias de trading y brokers especializados.</p>
+                        <a href="/blog/trading-oro-guia-completa" class="btn btn-primary" style="display: inline-block;" data-translate="blog.readMore">Leer Más</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card" style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                    <div style="height: 200px; overflow: hidden; background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); position: relative;">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop" alt="Trading Psychology" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; align-items: center; justify-content: center; background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+                            <i class="fas fa-brain" style="font-size: 48px; color: #fff;"></i>
+                        </div>
+                    </div>
+                    <div style="padding: 25px;">
+                        <div style="display: flex; gap: 15px; margin-bottom: 15px; font-size: 14px; color: #666;">
+                            <span><i class="fas fa-calendar"></i> 20 Nov 2024</span>
+                            <span><i class="fas fa-tag"></i> <span data-translate="blog.categories.psychology">Psicología</span></span>
+                        </div>
+                        <h3 style="margin-bottom: 10px; color: #333;" data-translate="blog.posts.psychology.title">Psicología del Trading: Control Emocional para Traders</h3>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 20px;" data-translate="blog.posts.psychology.description">Aprende a controlar las emociones, mantener la disciplina y desarrollar la mentalidad correcta para el trading exitoso.</p>
+                        <a href="/blog/psicologia-trading-control-emocional" class="btn btn-primary" style="display: inline-block;" data-translate="blog.readMore">Leer Más</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card" style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                    <div style="height: 200px; overflow: hidden; background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); position: relative;">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop" alt="Technical Analysis" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; align-items: center; justify-content: center; background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
+                            <i class="fas fa-chart-bar" style="font-size: 48px; color: #fff;"></i>
+                        </div>
+                    </div>
+                    <div style="padding: 25px;">
+                        <div style="display: flex; gap: 15px; margin-bottom: 15px; font-size: 14px; color: #666;">
+                            <span><i class="fas fa-calendar"></i> 15 Nov 2024</span>
+                            <span><i class="fas fa-tag"></i> <span data-translate="blog.categories.analysis">Análisis</span></span>
+                        </div>
+                        <h3 style="margin-bottom: 10px; color: #333;" data-translate="blog.posts.analysisComparison.title">Análisis Técnico vs Fundamental: ¿Cuál Elegir?</h3>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 20px;" data-translate="blog.posts.analysisComparison.description">Comparación detallada entre análisis técnico y fundamental, cuándo usar cada uno y cómo combinarlos efectivamente.</p>
+                        <a href="/blog/analisis-tecnico-vs-fundamental" class="btn btn-primary" style="display: inline-block;" data-translate="blog.readMore">Leer Más</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card" style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                    <div style="height: 200px; overflow: hidden; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); position: relative;">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop" alt="MetaTrader Platform" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; align-items: center; justify-content: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <i class="fas fa-desktop" style="font-size: 48px; color: #fff;"></i>
+                        </div>
+                    </div>
+                    <div style="padding: 25px;">
+                        <div style="display: flex; gap: 15px; margin-bottom: 15px; font-size: 14px; color: #666;">
+                            <span><i class="fas fa-calendar"></i> 10 Nov 2024</span>
+                            <span><i class="fas fa-tag"></i> <span data-translate="blog.categories.platforms">Plataformas</span></span>
+                        </div>
+                        <h3 style="margin-bottom: 10px; color: #333;" data-translate="blog.posts.metatrader.title">MetaTrader 4 vs MetaTrader 5: ¿Cuál Elegir?</h3>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 20px;" data-translate="blog.posts.metatrader.description">Comparación detallada entre MT4 y MT5: diferencias, ventajas, desventajas y cuál plataforma es mejor para traders latinoamericanos.</p>
+                        <a href="/blog/metatrader-4-vs-5" class="btn btn-primary" style="display: inline-block;" data-translate="blog.readMore">Leer Más</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card" style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                    <div style="height: 200px; overflow: hidden; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); position: relative;">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&h=400&fit=crop" alt="Risk Management" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; align-items: center; justify-content: center; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <i class="fas fa-shield-alt" style="font-size: 48px; color: #fff;"></i>
+                        </div>
+                    </div>
+                    <div style="padding: 25px;">
+                        <div style="display: flex; gap: 15px; margin-bottom: 15px; font-size: 14px; color: #666;">
+                            <span><i class="fas fa-calendar"></i> 5 Nov 2024</span>
+                            <span><i class="fas fa-tag"></i> <span data-translate="blog.categories.education">Educación</span></span>
+                        </div>
+                        <h3 style="margin-bottom: 10px; color: #333;" data-translate="blog.posts.riskManagement.title">Gestión de Riesgo en Trading: Guía Completa</h3>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 20px;" data-translate="blog.posts.riskManagement.description">Aprende a proteger tu capital con técnicas de gestión de riesgo: stop loss, take profit, tamaño de posición y estrategias de protección.</p>
+                        <a href="/blog/gestion-riesgo-trading" class="btn btn-primary" style="display: inline-block;" data-translate="blog.readMore">Leer Más</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card" style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                    <div style="height: 200px; overflow: hidden; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); position: relative;">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop" alt="Payment Methods" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; align-items: center; justify-content: center; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <i class="fas fa-credit-card" style="font-size: 48px; color: #fff;"></i>
+                        </div>
+                    </div>
+                    <div style="padding: 25px;">
+                        <div style="display: flex; gap: 15px; margin-bottom: 15px; font-size: 14px; color: #666;">
+                            <span><i class="fas fa-calendar"></i> 1 Nov 2024</span>
+                            <span><i class="fas fa-tag"></i> <span data-translate="blog.categories.brokers">Brokers</span></span>
+                        </div>
+                        <h3 style="margin-bottom: 10px; color: #333;" data-translate="blog.posts.paymentMethods.title">Métodos de Pago para Traders Latinoamericanos</h3>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 20px;" data-translate="blog.posts.paymentMethods.description">Guía completa sobre métodos de depósito y retiro disponibles para traders latinoamericanos: tarjetas, transferencias, e-wallets y métodos locales.</p>
+                        <a href="/blog/metodos-pago-latam" class="btn btn-primary" style="display: inline-block;" data-translate="blog.readMore">Leer Más</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card" style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                    <div style="height: 200px; overflow: hidden; background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); position: relative;">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=400&fit=crop" alt="Demo Account" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; align-items: center; justify-content: center; background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <i class="fas fa-graduation-cap" style="font-size: 48px; color: #fff;"></i>
+                        </div>
+                    </div>
+                    <div style="padding: 25px;">
+                        <div style="display: flex; gap: 15px; margin-bottom: 15px; font-size: 14px; color: #666;">
+                            <span><i class="fas fa-calendar"></i> 28 Oct 2024</span>
+                            <span><i class="fas fa-tag"></i> <span data-translate="blog.categories.education">Educación</span></span>
+                        </div>
+                        <h3 style="margin-bottom: 10px; color: #333;" data-translate="blog.posts.demoAccount.title">Cuentas Demo: Tu Mejor Aliado para Aprender Trading</h3>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 20px;" data-translate="blog.posts.demoAccount.description">Todo sobre cuentas demo gratuitas: cómo usarlas efectivamente, qué aprender, y cómo hacer la transición a trading real con confianza.</p>
+                        <a href="/blog/cuentas-demo-trading" class="btn btn-primary" style="display: inline-block;" data-translate="blog.readMore">Leer Más</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card" style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                    <div style="height: 200px; overflow: hidden; background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); position: relative;">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop" alt="Trading Strategies" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; align-items: center; justify-content: center; background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                            <i class="fas fa-chart-pie" style="font-size: 48px; color: #fff;"></i>
+                        </div>
+                    </div>
+                    <div style="padding: 25px;">
+                        <div style="display: flex; gap: 15px; margin-bottom: 15px; font-size: 14px; color: #666;">
+                            <span><i class="fas fa-calendar"></i> 25 Oct 2024</span>
+                            <span><i class="fas fa-tag"></i> <span data-translate="blog.categories.analysis">Análisis</span></span>
+                        </div>
+                        <h3 style="margin-bottom: 10px; color: #333;" data-translate="blog.posts.tradingStrategies.title">Estrategias de Trading para Principiantes</h3>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 20px;" data-translate="blog.posts.tradingStrategies.description">Descubre las mejores estrategias de trading para principiantes: scalping, day trading, swing trading y cómo elegir la adecuada para ti.</p>
+                        <a href="/blog/estrategias-trading-principiantes" class="btn btn-primary" style="display: inline-block;" data-translate="blog.readMore">Leer Más</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card" style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                    <div style="height: 200px; overflow: hidden; background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); position: relative;">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=400&fit=crop" alt="Mobile Trading" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; align-items: center; justify-content: center; background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                            <i class="fas fa-mobile-alt" style="font-size: 48px; color: #fff;"></i>
+                        </div>
+                    </div>
+                    <div style="padding: 25px;">
+                        <div style="display: flex; gap: 15px; margin-bottom: 15px; font-size: 14px; color: #666;">
+                            <span><i class="fas fa-calendar"></i> 20 Oct 2024</span>
+                            <span><i class="fas fa-tag"></i> <span data-translate="blog.categories.platforms">Plataformas</span></span>
+                        </div>
+                        <h3 style="margin-bottom: 10px; color: #333;" data-translate="blog.posts.mobileTrading.title">Trading Móvil: Las Mejores Apps para Traders</h3>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 20px;" data-translate="blog.posts.mobileTrading.description">Revisión de las mejores aplicaciones móviles para trading: características, funcionalidades y cómo operar desde tu smartphone de forma segura.</p>
+                        <a href="/blog/trading-movil-apps" class="btn btn-primary" style="display: inline-block;" data-translate="blog.readMore">Leer Más</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card" style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                    <div style="height: 200px; overflow: hidden; background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); position: relative;">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop" alt="Social Trading" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; align-items: center; justify-content: center; background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+                            <i class="fas fa-users" style="font-size: 48px; color: #fff;"></i>
+                        </div>
+                    </div>
+                    <div style="padding: 25px;">
+                        <div style="display: flex; gap: 15px; margin-bottom: 15px; font-size: 14px; color: #666;">
+                            <span><i class="fas fa-calendar"></i> 15 Oct 2024</span>
+                            <span><i class="fas fa-tag"></i> <span data-translate="blog.categories.education">Educación</span></span>
+                        </div>
+                        <h3 style="margin-bottom: 10px; color: #333;" data-translate="blog.posts.socialTrading.title">Social Trading: ¿Qué es y Cómo Funciona?</h3>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 20px;" data-translate="blog.posts.socialTrading.description">Aprende sobre social trading y copy trading: cómo seguir a traders exitosos, copiar sus operaciones y construir tu cartera de forma inteligente.</p>
+                        <a href="/blog/social-trading-guia" class="btn btn-primary" style="display: inline-block;" data-translate="blog.readMore">Leer Más</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card" style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                    <div style="height: 200px; overflow: hidden; background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); position: relative;">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop" alt="Trading Taxes" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; align-items: center; justify-content: center; background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
+                            <i class="fas fa-file-invoice-dollar" style="font-size: 48px; color: #fff;"></i>
+                        </div>
+                    </div>
+                    <div style="padding: 25px;">
+                        <div style="display: flex; gap: 15px; margin-bottom: 15px; font-size: 14px; color: #666;">
+                            <span><i class="fas fa-calendar"></i> 10 Oct 2024</span>
+                            <span><i class="fas fa-tag"></i> <span data-translate="blog.categories.regulation">Regulación</span></span>
+                        </div>
+                        <h3 style="margin-bottom: 10px; color: #333;" data-translate="blog.posts.taxes.title">Impuestos y Trading: Guía para Traders Latinoamericanos</h3>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 20px;" data-translate="blog.posts.taxes.description">Todo lo que necesitas saber sobre impuestos en trading: cómo declarar ganancias, deducciones permitidas y obligaciones fiscales por país.</p>
+                        <a href="/blog/impuestos-trading-latam" class="btn btn-primary" style="display: inline-block;" data-translate="blog.readMore">Leer Más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-translate="footer.title">LatamBrokerReviews</h3>
+                    <p data-translate="footer.description">La plataforma líder en reseñas de brokers para traders de América Latina.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer.quickLinks">Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="/" data-translate="nav.home">Inicio</a></li>
+                        <li><a href="/brokers" data-translate="nav.brokers">Brokers</a></li>
+                        <li><a href="/blog" data-translate="nav.blog">Blog</a></li>
+                        <li><a href="/#reviews" data-translate="nav.reviews">Reseñas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer.categories">Categorías</h4>
+                    <ul>
+                        <li><a href="/forex-trading" data-translate="nav.forex">Forex</a></li>
+                        <li><a href="/stocks-trading" data-translate="nav.stocks">Acciones</a></li>
+                        <li><a href="/crypto-trading" data-translate="nav.crypto">Criptomonedas</a></li>
+                        <li><a href="/cfd-trading" data-translate="nav.cfds">CFDs</a></li>
+                        <li><a href="/commodities-trading" data-translate="nav.commodities">Commodities</a></li>
+                        <li><a href="/education-training" data-translate="nav.education">Educación</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-translate="footer.copyright">Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/js/languages.js"></script>
+    <script src="/js/blog-post.js"></script>
+    <script src="/js/blog-list.js"></script>
+    <script src="/js/language-switcher.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
+

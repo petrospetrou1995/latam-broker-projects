@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brokers Confiables - Trusted Broker Reviews</title>
+    <meta name="description" content="Authority on broker safety and reliability. Scam alerts, regulation checker, fund protection, and verified reviews from real users.">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="/public/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/faq-bot.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="/">
+                    <h2><i class="fas fa-chart-line"></i> BrokersConfiables.com</h2>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link" data-translate="nav.home">Home</a></li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-translate="nav.brokers">Brokers</a>
+                    <div class="dropdown-menu">
+                        <a href="/brokers.html" class="dropdown-item" data-translate="nav.allBrokers">Todos los Brokers</a>
+                    </div>
+                </li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-translate="nav.categories">Categorías</a>
+                    <div class="dropdown-menu">
+                        <a href="/forex-trading.html" class="dropdown-item" data-translate="nav.forex">Forex</a>
+                        <a href="/stocks-trading.html" class="dropdown-item" data-translate="nav.stocks">Acciones</a>
+                        <a href="/crypto-trading.html" class="dropdown-item" data-translate="nav.crypto">Criptomonedas</a>
+                        <a href="/cfd-trading.html" class="dropdown-item" data-translate="nav.cfds">CFDs</a>
+                        <a href="/commodities-trading.html" class="dropdown-item" data-translate="nav.commodities">Commodities</a>
+                        <a href="/education-training.html" class="dropdown-item" data-translate="nav.education">Educación y Capacitación</a>
+                    </div>
+                </li>
+                <li><a href="/reviews.html" class="nav-link active" data-translate="nav.reviews">Reseñas</a></li>
+                <li><a href="/#about" class="nav-link" data-translate="nav.about">Acerca de</a></li>
+                <li><a href="/#contact" class="nav-link" data-translate="nav.contact">Contacto</a></li>
+                <li class="language-selector">
+                    <button type="button" class="language-btn" id="languageBtn">
+                        <i class="fas fa-globe"></i>
+                        <span id="currentLanguage">🇺🇸 English</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="language-dropdown" id="languageDropdown" style="display: none;">
+                        <div class="language-option" data-lang="en">
+                            <span class="flag">🇺🇸</span>
+                            <span>English</span>
+                        </div>
+                        <div class="language-option" data-lang="es">
+                            <span class="flag">🇲🇽</span>
+                            <span>Español</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero reviews-hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 data-translate="reviews.title">Reseñas de Usuarios</h1>
+                <p data-translate="reviews.subtitle">Lo que dicen nuestros usuarios sobre los brokers</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <div class="reviews-grid" id="reviewsGrid">
+                <!-- Reviews will be loaded dynamically -->
+            </div>
+
+            <div class="text-center">
+                <button type="button" class="btn btn-primary" id="loadMoreBtn">
+                    <span data-translate="reviews.loadMore">Cargar Más Reseñas</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-chart-line"></i> BrokersConfiables.com</h3>
+                    <p data-translate="footer.description">La plataforma líder en reseñas de brokers para América Latina.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer.quickLinks">Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="/brokers.html" data-translate="nav.brokers">Brokers</a></li>
+                        <li><a href="/reviews.html" data-translate="nav.reviews">Reseñas</a></li>
+                        <li><a href="/#about" data-translate="nav.about">Acerca de</a></li>
+                        <li><a href="/#contact" data-translate="nav.contact">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer.categories">Categorías</h4>
+                    <ul>
+                        <li><a href="/forex-trading.html" data-translate="footer.forex">Forex</a></li>
+                        <li><a href="/stocks-trading.html" data-translate="footer.stocks">Acciones</a></li>
+                        <li><a href="/crypto-trading.html" data-translate="footer.crypto">Criptomonedas</a></li>
+                        <li><a href="/cfd-trading.html" data-translate="footer.cfds">CFDs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer.legal">Legal</h4>
+                    <ul>
+                        <li><a href="/privacy" data-translate="footer.privacy">Política de Privacidad</a></li>
+                        <li><a href="/terms" data-translate="footer.terms">Términos de Uso</a></li>
+                        <li><a href="/disclaimer" data-translate="footer.disclaimer">Descargo de Responsabilidad</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BrokersConfiables.com. <span data-translate="footer.copyright">Todos los derechos reservados.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/public/js/languages.js"></script>
+    <script src="/public/js/static-brokers.js"></script>
+    <script src="/public/js/main.js"></script>
+    <script src="/public/js/language-switcher.js"></script>
+    <script src="/public/js/reviews.js"></script>
+    <script src="/public/js/faq-bot.js"></script>
+</body>
+</html>
