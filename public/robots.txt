@@ -1,0 +1,30 @@
+# robots.txt for BrokersConfiables
+
+User-agent: *
+Allow: /
+
+# Disallow admin and API routes
+Disallow: /admin
+Disallow: /api/
+Disallow: /login
+
+# Allow important pages
+Allow: /
+Allow: /brokers
+Allow: /reviews
+Allow: /blog
+Allow: /forex-trading
+Allow: /stocks-trading
+Allow: /crypto-trading
+Allow: /cfd-trading
+Allow: /commodities-trading
+Allow: /education-training
+
+# Sitemap location
+Sitemap: https://brokersconfiables.com/sitemap.xml
+
+# Crawl delay (optional, helps prevent server overload)
+Crawl-delay: 1
+
+
+
