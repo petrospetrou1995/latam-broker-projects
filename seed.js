@@ -408,6 +408,297 @@ async function seedDatabase() {
                     liveChat: true,
                     languages: ['Español', 'Portugués', 'Inglés', 'Francés', 'Alemán']
                 }
+            },
+            {
+                name: 'Xlence',
+                slug: 'xlence',
+                description: 'Xlence es el mejor broker de Forex para Latinoamérica en 2025, destacando por su amplia gama de tipos de activos, transparencia en comisiones, experiencia fácil de usar, cursos de trading extensos, promociones generosas para LATAM y soporte multilingüe 24/5. Con más de 300 instrumentos disponibles, Xlence ofrece spreads competitivos y ejecución rápida.',
+                website: 'https://xlence.com',
+                category: 'forex',
+                rating: 4.65,
+                totalReviews: 1450,
+                isFeatured: true,
+                isActive: true,
+                countries: ['México', 'Colombia', 'Argentina', 'Brasil', 'Chile', 'Perú', 'Ecuador', 'Venezuela'],
+                languages: ['Español', 'Portugués', 'Inglés'],
+                features: [
+                    { name: 'Amplia gama de activos', description: 'Más de 300 instrumentos', icon: 'fas fa-chart-line' },
+                    { name: 'Transparencia de comisiones', description: 'Sin costos ocultos', icon: 'fas fa-dollar-sign' },
+                    { name: 'Experiencia fácil de usar', description: 'Plataforma intuitiva', icon: 'fas fa-mobile-alt' },
+                    { name: 'Cursos extensos', description: 'Educación completa', icon: 'fas fa-graduation-cap' },
+                    { name: 'Promociones LATAM', description: 'Bonos especiales para la región', icon: 'fas fa-gift' },
+                    { name: 'Soporte 24/5', description: 'Atención multilingüe', icon: 'fas fa-headset' }
+                ],
+                tradingPlatforms: [
+                    { name: 'Xlence Web', description: 'Plataforma web', supported: true },
+                    { name: 'Xlence Mobile', description: 'App móvil', supported: true },
+                    { name: 'MetaTrader 4', description: 'MT4', supported: true },
+                    { name: 'MetaTrader 5', description: 'MT5', supported: true }
+                ],
+                accountTypes: [
+                    { name: 'Standard', minDeposit: 100, currency: 'USD', description: 'Cuenta estándar' },
+                    { name: 'Premium', minDeposit: 500, currency: 'USD', description: 'Cuenta premium con spreads reducidos' }
+                ],
+                regulations: [
+                    { country: 'Chipre', regulator: 'CySEC', license: 'CIF' },
+                    { country: 'Europa', regulator: 'MiFID', license: 'EU' }
+                ],
+                pros: [
+                    'Amplia gama de tipos de activos',
+                    'Transparencia total de comisiones',
+                    'Experiencia de usuario excepcional',
+                    'Cursos de trading extensos',
+                    'Promociones generosas para LATAM',
+                    'Soporte multilingüe 24/5'
+                ],
+                cons: [
+                    'Spreads variables según mercado',
+                    'Limitado en algunos países'
+                ],
+                customerSupport: {
+                    email: 'support@xlence.com',
+                    phone: '+1-800-XLENCE',
+                    liveChat: true,
+                    languages: ['Español', 'Portugués', 'Inglés']
+                },
+                socialMedia: {
+                    facebook: 'https://facebook.com/xlence',
+                    twitter: 'https://twitter.com/xlence',
+                    linkedin: 'https://linkedin.com/company/xlence',
+                    youtube: 'https://youtube.com/xlence'
+                }
+            },
+            {
+                name: 'EC Markets',
+                slug: 'ec-markets',
+                description: 'EC Markets es un broker multi-regulado con presencia local en México y Latinoamérica. Ofrece más de 1,000 instrumentos con spreads competitivos y ejecución rápida. Con opciones de pago locales para LATAM y soporte al cliente 24/7, EC Markets se destaca como una de las opciones más confiables para traders latinoamericanos.',
+                website: 'https://ecmarkets.com',
+                category: 'forex',
+                rating: 4.6,
+                totalReviews: 1320,
+                isFeatured: true,
+                isActive: true,
+                countries: ['México', 'Colombia', 'Argentina', 'Brasil', 'Chile', 'Perú'],
+                languages: ['Español', 'Portugués', 'Inglés'],
+                features: [
+                    { name: 'Más de 1,000 instrumentos', description: 'Amplia selección de activos', icon: 'fas fa-chart-line' },
+                    { name: 'Multi-regulado', description: 'Regulación en múltiples jurisdicciones', icon: 'fas fa-shield-alt' },
+                    { name: 'Presencia local en México', description: 'Oficina en Latinoamérica', icon: 'fas fa-map-marker-alt' },
+                    { name: 'Spreads competitivos', description: 'Costos bajos de trading', icon: 'fas fa-dollar-sign' },
+                    { name: 'Ejecución rápida', description: 'Velocidad de ejecución superior', icon: 'fas fa-bolt' },
+                    { name: 'Pagos locales LATAM', description: 'Métodos de pago regionales', icon: 'fas fa-credit-card' },
+                    { name: 'Soporte 24/7', description: 'Atención al cliente continua', icon: 'fas fa-headset' }
+                ],
+                tradingPlatforms: [
+                    { name: 'MetaTrader 4', description: 'MT4', supported: true },
+                    { name: 'MetaTrader 5', description: 'MT5', supported: true },
+                    { name: 'EC Markets Web', description: 'Plataforma web', supported: true }
+                ],
+                accountTypes: [
+                    { name: 'Standard', minDeposit: 100, currency: 'USD', description: 'Cuenta estándar' },
+                    { name: 'ECN', minDeposit: 500, currency: 'USD', description: 'Cuenta ECN con spreads desde 0 pips' }
+                ],
+                regulations: [
+                    { country: 'Chipre', regulator: 'CySEC', license: 'CIF' },
+                    { country: 'Reino Unido', regulator: 'FCA', license: 'FCA' },
+                    { country: 'Australia', regulator: 'ASIC', license: 'ASIC' }
+                ],
+                pros: [
+                    'Más de 1,000 instrumentos',
+                    'Multi-regulado',
+                    'Presencia local en México',
+                    'Spreads competitivos y ejecución rápida',
+                    'Opciones de pago locales para LATAM',
+                    'Soporte al cliente 24/7'
+                ],
+                cons: [
+                    'Depósito mínimo puede ser alto para algunos',
+                    'No disponible en todos los países'
+                ],
+                customerSupport: {
+                    email: 'support@ecmarkets.com',
+                    phone: '+52-55-ECMARKETS',
+                    liveChat: true,
+                    languages: ['Español', 'Portugués', 'Inglés']
+                },
+                socialMedia: {
+                    facebook: 'https://facebook.com/ecmarkets',
+                    twitter: 'https://twitter.com/ecmarkets',
+                    linkedin: 'https://linkedin.com/company/ecmarkets',
+                    youtube: 'https://youtube.com/ecmarkets'
+                }
+            },
+            {
+                name: 'Eightcap',
+                slug: 'eightcap',
+                description: 'Eightcap es un broker con múltiples licencias Tier 1 que ofrece más de 800 instrumentos para trading. Con canal de YouTube dedicado para LATAM, sección educativa sólida y charting de TradingView, Eightcap es una excelente opción para traders que buscan herramientas profesionales y educación de calidad.',
+                website: 'https://eightcap.com',
+                category: 'forex',
+                rating: 4.4,
+                totalReviews: 1180,
+                isFeatured: true,
+                isActive: true,
+                countries: ['México', 'Colombia', 'Argentina', 'Brasil', 'Chile', 'Perú'],
+                languages: ['Español', 'Portugués', 'Inglés'],
+                features: [
+                    { name: 'Más de 800 instrumentos', description: 'Amplia gama de activos', icon: 'fas fa-chart-line' },
+                    { name: 'Múltiples licencias Tier 1', description: 'Regulación de primer nivel', icon: 'fas fa-shield-alt' },
+                    { name: 'Canal YouTube LATAM', description: 'Contenido educativo regional', icon: 'fab fa-youtube' },
+                    { name: 'Sección educativa sólida', description: 'Recursos de aprendizaje', icon: 'fas fa-graduation-cap' },
+                    { name: 'Charting TradingView', description: 'Herramientas profesionales', icon: 'fas fa-chart-bar' }
+                ],
+                tradingPlatforms: [
+                    { name: 'MetaTrader 4', description: 'MT4', supported: true },
+                    { name: 'MetaTrader 5', description: 'MT5', supported: true },
+                    { name: 'TradingView', description: 'Charting avanzado', supported: true }
+                ],
+                accountTypes: [
+                    { name: 'Standard', minDeposit: 100, currency: 'USD', description: 'Cuenta estándar' },
+                    { name: 'Raw', minDeposit: 100, currency: 'USD', description: 'Cuenta Raw con spreads desde 0 pips' }
+                ],
+                regulations: [
+                    { country: 'Australia', regulator: 'ASIC', license: '391441' },
+                    { country: 'Reino Unido', regulator: 'FCA', license: 'FCA' },
+                    { country: 'Bahamas', regulator: 'SCB', license: 'SCB' }
+                ],
+                pros: [
+                    'Más de 800 instrumentos',
+                    'Múltiples licencias Tier 1',
+                    'Canal YouTube para LATAM',
+                    'Sección educativa sólida',
+                    'Charting de TradingView',
+                    'Spreads competitivos'
+                ],
+                cons: [
+                    'Menos instrumentos que algunos competidores',
+                    'No disponible en todos los países'
+                ],
+                customerSupport: {
+                    email: 'support@eightcap.com',
+                    phone: '+61-3-8376-3600',
+                    liveChat: true,
+                    languages: ['Español', 'Portugués', 'Inglés']
+                },
+                socialMedia: {
+                    facebook: 'https://facebook.com/eightcap',
+                    twitter: 'https://twitter.com/eightcap',
+                    linkedin: 'https://linkedin.com/company/eightcap',
+                    youtube: 'https://youtube.com/eightcap'
+                }
+            },
+            {
+                name: 'Deriv',
+                slug: 'deriv',
+                description: 'Deriv ofrece más de 500 instrumentos con una amplia elección de plataformas. Especializado en trading de CFDs y opciones, Deriv proporciona soporte al cliente 24/7 y una plataforma intuitiva adecuada para traders de todos los niveles en Latinoamérica.',
+                website: 'https://deriv.com',
+                category: 'cfd',
+                rating: 4.1,
+                totalReviews: 950,
+                isFeatured: false,
+                isActive: true,
+                countries: ['México', 'Colombia', 'Argentina', 'Brasil', 'Chile', 'Perú'],
+                languages: ['Español', 'Portugués', 'Inglés'],
+                features: [
+                    { name: 'Más de 500 instrumentos', description: 'Amplia selección', icon: 'fas fa-chart-line' },
+                    { name: 'Amplia elección de plataformas', description: 'Múltiples opciones', icon: 'fas fa-desktop' },
+                    { name: 'Trading de CFDs y opciones', description: 'Especializado', icon: 'fas fa-chart-bar' },
+                    { name: 'Soporte 24/7', description: 'Atención continua', icon: 'fas fa-headset' }
+                ],
+                tradingPlatforms: [
+                    { name: 'Deriv Web', description: 'Plataforma web', supported: true },
+                    { name: 'Deriv Mobile', description: 'App móvil', supported: true },
+                    { name: 'Deriv MT5', description: 'MT5', supported: true },
+                    { name: 'Deriv X', description: 'Plataforma avanzada', supported: true }
+                ],
+                accountTypes: [
+                    { name: 'Demo', minDeposit: 0, currency: 'USD', description: 'Cuenta demo gratuita' },
+                    { name: 'Real', minDeposit: 5, currency: 'USD', description: 'Depósito mínimo muy bajo' }
+                ],
+                regulations: [
+                    { country: 'Malta', regulator: 'MFSA', license: 'MFSA' },
+                    { country: 'Malasia', regulator: 'Labuan FSA', license: 'Labuan' }
+                ],
+                pros: [
+                    'Más de 500 instrumentos',
+                    'Amplia elección de plataformas',
+                    'Trading de CFDs y opciones',
+                    'Soporte al cliente 24/7',
+                    'Depósito mínimo muy bajo',
+                    'Plataforma intuitiva'
+                ],
+                cons: [
+                    'Menos instrumentos que competidores',
+                    'Regulación limitada en algunos países'
+                ],
+                customerSupport: {
+                    email: 'support@deriv.com',
+                    phone: '+356-2776-1666',
+                    liveChat: true,
+                    languages: ['Español', 'Portugués', 'Inglés']
+                },
+                socialMedia: {
+                    facebook: 'https://facebook.com/deriv',
+                    twitter: 'https://twitter.com/deriv',
+                    linkedin: 'https://linkedin.com/company/deriv',
+                    youtube: 'https://youtube.com/deriv'
+                }
+            },
+            {
+                name: 'TMGM',
+                slug: 'tmgm',
+                description: 'TMGM es un broker global con fuerte presencia en Asia-Pacífico que se está expandiendo en Latinoamérica. Ofrece trading en Forex, CFDs, acciones y commodities con spreads competitivos, plataformas MetaTrader y soporte multilingüe. Con regulación ASIC y FSA, TMGM es una opción confiable para traders latinoamericanos.',
+                website: 'https://tmgm.com',
+                category: 'forex',
+                rating: 4.3,
+                totalReviews: 1100,
+                isFeatured: false,
+                isActive: true,
+                countries: ['México', 'Colombia', 'Argentina', 'Brasil', 'Chile', 'Perú'],
+                languages: ['Español', 'Portugués', 'Inglés', 'Chino'],
+                features: [
+                    { name: 'Trading global', description: 'Acceso a mercados internacionales', icon: 'fas fa-globe' },
+                    { name: 'Spreads competitivos', description: 'Costos bajos', icon: 'fas fa-dollar-sign' },
+                    { name: 'MetaTrader 4/5', description: 'Plataformas profesionales', icon: 'fas fa-desktop' },
+                    { name: 'Soporte multilingüe', description: 'Atención en varios idiomas', icon: 'fas fa-headset' },
+                    { name: 'Regulación sólida', description: 'ASIC y FSA', icon: 'fas fa-shield-alt' }
+                ],
+                tradingPlatforms: [
+                    { name: 'MetaTrader 4', description: 'MT4', supported: true },
+                    { name: 'MetaTrader 5', description: 'MT5', supported: true },
+                    { name: 'TMGM Web', description: 'Plataforma web', supported: true }
+                ],
+                accountTypes: [
+                    { name: 'Standard', minDeposit: 100, currency: 'USD', description: 'Cuenta estándar' },
+                    { name: 'ECN', minDeposit: 500, currency: 'USD', description: 'Cuenta ECN' }
+                ],
+                regulations: [
+                    { country: 'Australia', regulator: 'ASIC', license: '436416' },
+                    { country: 'Vanuatu', regulator: 'FSA', license: 'FSA' }
+                ],
+                pros: [
+                    'Regulación ASIC y FSA',
+                    'Spreads competitivos',
+                    'Plataformas MetaTrader',
+                    'Soporte multilingüe',
+                    'Presencia global',
+                    'Ejecución rápida'
+                ],
+                cons: [
+                    'Menos conocido en LATAM',
+                    'Opciones de pago locales limitadas'
+                ],
+                customerSupport: {
+                    email: 'support@tmgm.com',
+                    phone: '+61-2-8039-7366',
+                    liveChat: true,
+                    languages: ['Español', 'Portugués', 'Inglés', 'Chino']
+                },
+                socialMedia: {
+                    facebook: 'https://facebook.com/tmgm',
+                    twitter: 'https://twitter.com/tmgm',
+                    linkedin: 'https://linkedin.com/company/tmgm',
+                    youtube: 'https://youtube.com/tmgm'
+                }
             }
         ];
 
@@ -424,6 +715,11 @@ async function seedDatabase() {
         const plus500Broker = await Broker.findOne({ name: 'Plus500' });
         const avatradeBroker = await Broker.findOne({ name: 'AvaTrade' });
         const igMarketsBroker = await Broker.findOne({ name: 'IG Markets' });
+        const xlenceBroker = await Broker.findOne({ name: 'Xlence' });
+        const ecMarketsBroker = await Broker.findOne({ name: 'EC Markets' });
+        const eightcapBroker = await Broker.findOne({ name: 'Eightcap' });
+        const derivBroker = await Broker.findOne({ name: 'Deriv' });
+        const tmgmBroker = await Broker.findOne({ name: 'TMGM' });
 
         const reviews = [
             // Libertex Reviews (8 reviews)
@@ -1156,6 +1452,616 @@ async function seedDatabase() {
                 verified: true,
                 helpful: 34,
                 notHelpful: 1
+            },
+            
+            // Xlence Reviews (8 reviews)
+            {
+                broker: xlenceBroker._id,
+                user: { name: 'Diego Mendoza', email: 'diego.mendoza@email.com', country: 'México' },
+                rating: 5,
+                title: 'El mejor broker para LATAM - Excelente experiencia',
+                content: 'Xlence es sin duda el mejor broker para traders latinoamericanos. La transparencia en comisiones es excepcional, la plataforma es muy fácil de usar y los cursos de trading son completos. Las promociones para LATAM son generosas y el soporte multilingüe 24/5 es excelente.',
+                pros: ['Transparencia total', 'Plataforma fácil de usar', 'Cursos extensos', 'Promociones LATAM'],
+                cons: ['Spreads variables'],
+                experience: 'advanced',
+                tradingDuration: '3-5-years',
+                isApproved: true,
+                verified: true,
+                helpful: 28,
+                notHelpful: 2
+            },
+            {
+                broker: xlenceBroker._id,
+                user: { name: 'Sofia Herrera', email: 'sofia.herrera@email.com', country: 'Colombia' },
+                rating: 5,
+                title: 'Excelente broker con amplia gama de activos',
+                content: 'Xlence ofrece una amplia gama de tipos de activos que me permite diversificar mi cartera. La experiencia de usuario es excepcional y los cursos de trading me han ayudado mucho. Las promociones para LATAM son un gran incentivo.',
+                pros: ['Amplia gama de activos', 'Experiencia excelente', 'Cursos útiles'],
+                cons: ['Spreads variables'],
+                experience: 'intermediate',
+                tradingDuration: '1-3-years',
+                isApproved: true,
+                verified: true,
+                helpful: 22,
+                notHelpful: 1
+            },
+            {
+                broker: xlenceBroker._id,
+                user: { name: 'Ricardo Vega', email: 'ricardo.vega@email.com', country: 'Argentina' },
+                rating: 4,
+                title: 'Muy buena opción para traders latinoamericanos',
+                content: 'Xlence es una muy buena opción para traders latinoamericanos. La plataforma es intuitiva, los cursos son completos y el soporte multilingüe es excelente. Las promociones para LATAM son atractivas.',
+                pros: ['Plataforma intuitiva', 'Cursos completos', 'Soporte multilingüe'],
+                cons: ['Spreads variables según mercado'],
+                experience: 'intermediate',
+                tradingDuration: '1-3-years',
+                isApproved: true,
+                verified: true,
+                helpful: 18,
+                notHelpful: 3
+            },
+            {
+                broker: xlenceBroker._id,
+                user: { name: 'Patricia Morales', email: 'patricia.morales@email.com', country: 'Chile' },
+                rating: 5,
+                title: 'Perfecto para principiantes y avanzados',
+                content: 'Xlence es perfecto tanto para principiantes como para traders avanzados. Los cursos extensos ayudan a los nuevos traders, mientras que la amplia gama de activos y la transparencia atraen a traders experimentados. El soporte 24/5 es excelente.',
+                pros: ['Perfecto para todos los niveles', 'Cursos extensos', 'Soporte 24/5'],
+                cons: ['Spreads variables'],
+                experience: 'beginner',
+                tradingDuration: 'less-than-1-year',
+                isApproved: true,
+                verified: true,
+                helpful: 25,
+                notHelpful: 1
+            },
+            {
+                broker: xlenceBroker._id,
+                user: { name: 'Fernando Cruz', email: 'fernando.cruz@email.com', country: 'Perú' },
+                rating: 4,
+                title: 'Broker confiable con excelente educación',
+                content: 'Xlence es un broker confiable con excelente educación. Los cursos de trading son muy completos y me han ayudado a mejorar mis estrategias. La plataforma es fácil de usar y el soporte responde rápido.',
+                pros: ['Excelente educación', 'Plataforma fácil', 'Buen soporte'],
+                cons: ['Spreads variables'],
+                experience: 'intermediate',
+                tradingDuration: '1-3-years',
+                isApproved: true,
+                verified: true,
+                helpful: 16,
+                notHelpful: 2
+            },
+            {
+                broker: xlenceBroker._id,
+                user: { name: 'Laura Jiménez', email: 'laura.jimenez@email.com', country: 'México' },
+                rating: 5,
+                title: 'El mejor en transparencia y promociones LATAM',
+                content: 'Xlence destaca por su transparencia total en comisiones y las promociones generosas para LATAM. La plataforma es muy fácil de usar y los cursos son completos. Recomendado totalmente.',
+                pros: ['Transparencia total', 'Promociones LATAM', 'Fácil de usar'],
+                cons: ['Spreads variables'],
+                experience: 'advanced',
+                tradingDuration: '3-5-years',
+                isApproved: true,
+                verified: true,
+                helpful: 30,
+                notHelpful: 1
+            },
+            {
+                broker: xlenceBroker._id,
+                user: { name: 'Carlos Ramírez', email: 'carlos.ramirez@email.com', country: 'Ecuador' },
+                rating: 4,
+                title: 'Buena experiencia general',
+                content: 'Mi experiencia con Xlence ha sido muy positiva. La plataforma es estable, los cursos son útiles y el soporte multilingüe es excelente. Las promociones para LATAM son un plus importante.',
+                pros: ['Plataforma estable', 'Cursos útiles', 'Soporte multilingüe'],
+                cons: ['Spreads variables'],
+                experience: 'intermediate',
+                tradingDuration: '1-3-years',
+                isApproved: true,
+                verified: true,
+                helpful: 14,
+                notHelpful: 4
+            },
+            {
+                broker: xlenceBroker._id,
+                user: { name: 'María Fernández', email: 'maria.fernandez@email.com', country: 'Venezuela' },
+                rating: 5,
+                title: 'Excelente broker para la región',
+                content: 'Xlence es un excelente broker para la región latinoamericana. La amplia gama de activos, la transparencia y las promociones especiales para LATAM lo hacen una opción muy atractiva. El soporte 24/5 es excelente.',
+                pros: ['Amplia gama de activos', 'Transparencia', 'Promociones LATAM'],
+                cons: ['Spreads variables'],
+                experience: 'advanced',
+                tradingDuration: 'more-than-5-years',
+                isApproved: true,
+                verified: true,
+                helpful: 27,
+                notHelpful: 1
+            },
+            
+            // EC Markets Reviews (8 reviews)
+            {
+                broker: ecMarketsBroker._id,
+                user: { name: 'Alejandro Torres', email: 'alejandro.torres@email.com', country: 'México' },
+                rating: 5,
+                title: 'Excelente con presencia local en México',
+                content: 'EC Markets es excelente, especialmente por su presencia local en México. Los spreads son muy competitivos, la ejecución es rápida y las opciones de pago locales facilitan mucho las transacciones. El soporte 24/7 es excepcional.',
+                pros: ['Presencia local en México', 'Spreads competitivos', 'Ejecución rápida', 'Pagos locales'],
+                cons: ['Depósito mínimo puede ser alto'],
+                experience: 'advanced',
+                tradingDuration: '3-5-years',
+                isApproved: true,
+                verified: true,
+                helpful: 26,
+                notHelpful: 2
+            },
+            {
+                broker: ecMarketsBroker._id,
+                user: { name: 'Valentina Sánchez', email: 'valentina.sanchez@email.com', country: 'Colombia' },
+                rating: 5,
+                title: 'Multi-regulado y confiable',
+                content: 'EC Markets es multi-regulado y muy confiable. Tienen más de 1,000 instrumentos, spreads competitivos y ejecución rápida. Las opciones de pago locales para LATAM son muy convenientes.',
+                pros: ['Multi-regulado', 'Más de 1,000 instrumentos', 'Pagos locales'],
+                cons: ['No disponible en todos los países'],
+                experience: 'intermediate',
+                tradingDuration: '1-3-years',
+                isApproved: true,
+                verified: true,
+                helpful: 21,
+                notHelpful: 1
+            },
+            {
+                broker: ecMarketsBroker._id,
+                user: { name: 'Roberto Díaz', email: 'roberto.diaz@email.com', country: 'Argentina' },
+                rating: 4,
+                title: 'Muy buena opción para LATAM',
+                content: 'EC Markets es una muy buena opción para traders latinoamericanos. Los spreads son competitivos, la ejecución es rápida y las opciones de pago locales son convenientes. El soporte 24/7 es excelente.',
+                pros: ['Spreads competitivos', 'Ejecución rápida', 'Pagos locales'],
+                cons: ['Depósito mínimo puede ser alto'],
+                experience: 'intermediate',
+                tradingDuration: '1-3-years',
+                isApproved: true,
+                verified: true,
+                helpful: 17,
+                notHelpful: 3
+            },
+            {
+                broker: ecMarketsBroker._id,
+                user: { name: 'Carmen López', email: 'carmen.lopez@email.com', country: 'Chile' },
+                rating: 5,
+                title: 'Excelente ejecución y soporte',
+                content: 'EC Markets tiene excelente ejecución y soporte al cliente 24/7. Los spreads son competitivos y tienen más de 1,000 instrumentos. Las opciones de pago locales facilitan mucho las transacciones.',
+                pros: ['Ejecución excelente', 'Soporte 24/7', 'Más de 1,000 instrumentos'],
+                cons: ['No disponible en todos los países'],
+                experience: 'advanced',
+                tradingDuration: '3-5-years',
+                isApproved: true,
+                verified: true,
+                helpful: 24,
+                notHelpful: 1
+            },
+            {
+                broker: ecMarketsBroker._id,
+                user: { name: 'Javier Martínez', email: 'javier.martinez@email.com', country: 'Perú' },
+                rating: 4,
+                title: 'Broker sólido con buena regulación',
+                content: 'EC Markets es un broker sólido con buena regulación múltiple. Los spreads son competitivos y la ejecución es rápida. Las opciones de pago locales son convenientes para traders latinoamericanos.',
+                pros: ['Regulación múltiple', 'Spreads competitivos', 'Pagos locales'],
+                cons: ['Depósito mínimo puede ser alto'],
+                experience: 'intermediate',
+                tradingDuration: '1-3-years',
+                isApproved: true,
+                verified: true,
+                helpful: 15,
+                notHelpful: 4
+            },
+            {
+                broker: ecMarketsBroker._id,
+                user: { name: 'Isabel García', email: 'isabel.garcia@email.com', country: 'Brasil' },
+                rating: 5,
+                title: 'Perfecto para traders latinoamericanos',
+                content: 'EC Markets es perfecto para traders latinoamericanos. La presencia local en México, los spreads competitivos y las opciones de pago locales lo hacen una excelente opción. El soporte 24/7 es excepcional.',
+                pros: ['Presencia local', 'Spreads competitivos', 'Soporte 24/7'],
+                cons: ['No disponible en todos los países'],
+                experience: 'advanced',
+                tradingDuration: 'more-than-5-years',
+                isApproved: true,
+                verified: true,
+                helpful: 29,
+                notHelpful: 1
+            },
+            {
+                broker: ecMarketsBroker._id,
+                user: { name: 'Miguel Ruiz', email: 'miguel.ruiz@email.com', country: 'México' },
+                rating: 4,
+                title: 'Muy buena experiencia con presencia local',
+                content: 'Mi experiencia con EC Markets ha sido muy positiva. La presencia local en México es un gran plus, los spreads son competitivos y las opciones de pago locales facilitan las transacciones.',
+                pros: ['Presencia local', 'Spreads competitivos', 'Pagos locales'],
+                cons: ['Depósito mínimo puede ser alto'],
+                experience: 'intermediate',
+                tradingDuration: '1-3-years',
+                isApproved: true,
+                verified: true,
+                helpful: 19,
+                notHelpful: 2
+            },
+            {
+                broker: ecMarketsBroker._id,
+                user: { name: 'Lucía Hernández', email: 'lucia.hernandez@email.com', country: 'Colombia' },
+                rating: 5,
+                title: 'Excelente broker multi-regulado',
+                content: 'EC Markets es un excelente broker multi-regulado. Tienen más de 1,000 instrumentos, spreads competitivos y ejecución rápida. Las opciones de pago locales y el soporte 24/7 son excelentes.',
+                pros: ['Multi-regulado', 'Más de 1,000 instrumentos', 'Soporte 24/7'],
+                cons: ['No disponible en todos los países'],
+                experience: 'advanced',
+                tradingDuration: '3-5-years',
+                isApproved: true,
+                verified: true,
+                helpful: 23,
+                notHelpful: 1
+            },
+            
+            // Eightcap Reviews (8 reviews)
+            {
+                broker: eightcapBroker._id,
+                user: { name: 'Daniel Castro', email: 'daniel.castro@email.com', country: 'México' },
+                rating: 4,
+                title: 'Excelente con TradingView y educación',
+                content: 'Eightcap es excelente, especialmente por el charting de TradingView y la sección educativa sólida. El canal de YouTube para LATAM es muy útil y las múltiples licencias Tier 1 dan confianza.',
+                pros: ['Charting TradingView', 'Educación sólida', 'Canal YouTube LATAM', 'Licencias Tier 1'],
+                cons: ['Menos instrumentos que algunos competidores'],
+                experience: 'advanced',
+                tradingDuration: '3-5-years',
+                isApproved: true,
+                verified: true,
+                helpful: 20,
+                notHelpful: 3
+            },
+            {
+                broker: eightcapBroker._id,
+                user: { name: 'Sandra Morales', email: 'sandra.morales@email.com', country: 'Colombia' },
+                rating: 5,
+                title: 'Perfecto para traders que usan TradingView',
+                content: 'Eightcap es perfecto para traders que usan TradingView. El charting es excelente, la educación es sólida y el canal de YouTube para LATAM es muy útil. Las múltiples licencias Tier 1 dan confianza.',
+                pros: ['TradingView integrado', 'Educación sólida', 'Canal YouTube LATAM'],
+                cons: ['Menos instrumentos'],
+                experience: 'intermediate',
+                tradingDuration: '1-3-years',
+                isApproved: true,
+                verified: true,
+                helpful: 18,
+                notHelpful: 2
+            },
+            {
+                broker: eightcapBroker._id,
+                user: { name: 'Héctor Vega', email: 'hector.vega@email.com', country: 'Argentina' },
+                rating: 4,
+                title: 'Buena opción con herramientas profesionales',
+                content: 'Eightcap es una buena opción con herramientas profesionales como TradingView. La educación es sólida y el canal de YouTube para LATAM es útil. Las múltiples licencias Tier 1 son un plus.',
+                pros: ['Herramientas profesionales', 'Educación sólida', 'Licencias Tier 1'],
+                cons: ['Menos instrumentos que competidores'],
+                experience: 'intermediate',
+                tradingDuration: '1-3-years',
+                isApproved: true,
+                verified: true,
+                helpful: 16,
+                notHelpful: 4
+            },
+            {
+                broker: eightcapBroker._id,
+                user: { name: 'Patricia Cruz', email: 'patricia.cruz@email.com', country: 'Chile' },
+                rating: 5,
+                title: 'Excelente educación y TradingView',
+                content: 'Eightcap tiene excelente educación y el charting de TradingView es superior. El canal de YouTube para LATAM es muy útil y las múltiples licencias Tier 1 dan confianza total.',
+                pros: ['Educación excelente', 'TradingView superior', 'Canal YouTube LATAM'],
+                cons: ['Menos instrumentos'],
+                experience: 'beginner',
+                tradingDuration: 'less-than-1-year',
+                isApproved: true,
+                verified: true,
+                helpful: 22,
+                notHelpful: 1
+            },
+            {
+                broker: eightcapBroker._id,
+                user: { name: 'Fernando Jiménez', email: 'fernando.jimenez@email.com', country: 'Perú' },
+                rating: 4,
+                title: 'Broker confiable con TradingView',
+                content: 'Eightcap es un broker confiable con TradingView integrado. La educación es sólida y el canal de YouTube para LATAM es útil. Las múltiples licencias Tier 1 son un gran plus.',
+                pros: ['TradingView integrado', 'Educación sólida', 'Licencias Tier 1'],
+                cons: ['Menos instrumentos'],
+                experience: 'intermediate',
+                tradingDuration: '1-3-years',
+                isApproved: true,
+                verified: true,
+                helpful: 14,
+                notHelpful: 3
+            },
+            {
+                broker: eightcapBroker._id,
+                user: { name: 'Laura Ramírez', email: 'laura.ramirez@email.com', country: 'Brasil' },
+                rating: 5,
+                title: 'Perfecto para análisis técnico avanzado',
+                content: 'Eightcap es perfecto para análisis técnico avanzado con TradingView. La educación es sólida, el canal de YouTube para LATAM es muy útil y las múltiples licencias Tier 1 dan confianza.',
+                pros: ['TradingView avanzado', 'Educación sólida', 'Licencias Tier 1'],
+                cons: ['Menos instrumentos'],
+                experience: 'advanced',
+                tradingDuration: 'more-than-5-years',
+                isApproved: true,
+                verified: true,
+                helpful: 25,
+                notHelpful: 1
+            },
+            {
+                broker: eightcapBroker._id,
+                user: { name: 'Carlos Fernández', email: 'carlos.fernandez@email.com', country: 'México' },
+                rating: 4,
+                title: 'Buena opción con herramientas profesionales',
+                content: 'Eightcap es una buena opción con herramientas profesionales. El charting de TradingView es excelente y la educación es sólida. El canal de YouTube para LATAM es muy útil.',
+                pros: ['Herramientas profesionales', 'TradingView', 'Educación sólida'],
+                cons: ['Menos instrumentos'],
+                experience: 'intermediate',
+                tradingDuration: '1-3-years',
+                isApproved: true,
+                verified: true,
+                helpful: 17,
+                notHelpful: 2
+            },
+            {
+                broker: eightcapBroker._id,
+                user: { name: 'María Torres', email: 'maria.torres@email.com', country: 'Colombia' },
+                rating: 5,
+                title: 'Excelente con múltiples licencias Tier 1',
+                content: 'Eightcap es excelente con múltiples licencias Tier 1 que dan confianza total. El charting de TradingView es superior, la educación es sólida y el canal de YouTube para LATAM es muy útil.',
+                pros: ['Licencias Tier 1', 'TradingView superior', 'Educación sólida'],
+                cons: ['Menos instrumentos'],
+                experience: 'advanced',
+                tradingDuration: '3-5-years',
+                isApproved: true,
+                verified: true,
+                helpful: 21,
+                notHelpful: 1
+            },
+            
+            // Deriv Reviews (8 reviews)
+            {
+                broker: derivBroker._id,
+                user: { name: 'Roberto Sánchez', email: 'roberto.sanchez@email.com', country: 'México' },
+                rating: 4,
+                title: 'Buena opción para CFDs y opciones',
+                content: 'Deriv es una buena opción para trading de CFDs y opciones. Tienen más de 500 instrumentos, amplia elección de plataformas y el depósito mínimo es muy bajo. El soporte 24/7 es excelente.',
+                pros: ['CFDs y opciones', 'Amplia elección de plataformas', 'Depósito mínimo bajo', 'Soporte 24/7'],
+                cons: ['Menos instrumentos que competidores'],
+                experience: 'intermediate',
+                tradingDuration: '1-3-years',
+                isApproved: true,
+                verified: true,
+                helpful: 15,
+                notHelpful: 3
+            },
+            {
+                broker: derivBroker._id,
+                user: { name: 'Sofia Díaz', email: 'sofia.diaz@email.com', country: 'Colombia' },
+                rating: 4,
+                title: 'Perfecto para principiantes con depósito bajo',
+                content: 'Deriv es perfecto para principiantes con depósito mínimo muy bajo. Tienen más de 500 instrumentos, amplia elección de plataformas y el soporte 24/7 es excelente. Ideal para empezar.',
+                pros: ['Depósito mínimo muy bajo', 'Amplia elección de plataformas', 'Soporte 24/7'],
+                cons: ['Menos instrumentos'],
+                experience: 'beginner',
+                tradingDuration: 'less-than-1-year',
+                isApproved: true,
+                verified: true,
+                helpful: 19,
+                notHelpful: 2
+            },
+            {
+                broker: derivBroker._id,
+                user: { name: 'Diego López', email: 'diego.lopez@email.com', country: 'Argentina' },
+                rating: 4,
+                title: 'Buena plataforma para opciones',
+                content: 'Deriv es una buena plataforma para trading de opciones. Tienen más de 500 instrumentos, amplia elección de plataformas y el soporte 24/7 es excelente. El depósito mínimo bajo es un plus.',
+                pros: ['Trading de opciones', 'Amplia elección de plataformas', 'Soporte 24/7'],
+                cons: ['Menos instrumentos'],
+                experience: 'intermediate',
+                tradingDuration: '1-3-years',
+                isApproved: true,
+                verified: true,
+                helpful: 16,
+                notHelpful: 4
+            },
+            {
+                broker: derivBroker._id,
+                user: { name: 'Valentina Martínez', email: 'valentina.martinez@email.com', country: 'Chile' },
+                rating: 5,
+                title: 'Excelente para empezar con poco capital',
+                content: 'Deriv es excelente para empezar con poco capital. El depósito mínimo es muy bajo, tienen más de 500 instrumentos y el soporte 24/7 es excelente. La plataforma es intuitiva.',
+                pros: ['Depósito mínimo muy bajo', 'Más de 500 instrumentos', 'Soporte 24/7'],
+                cons: ['Menos instrumentos'],
+                experience: 'beginner',
+                tradingDuration: 'less-than-1-year',
+                isApproved: true,
+                verified: true,
+                helpful: 23,
+                notHelpful: 1
+            },
+            {
+                broker: derivBroker._id,
+                user: { name: 'Ricardo García', email: 'ricardo.garcia@email.com', country: 'Perú' },
+                rating: 4,
+                title: 'Buena opción con múltiples plataformas',
+                content: 'Deriv es una buena opción con múltiples plataformas disponibles. Tienen más de 500 instrumentos, trading de CFDs y opciones, y el soporte 24/7 es excelente.',
+                pros: ['Múltiples plataformas', 'CFDs y opciones', 'Soporte 24/7'],
+                cons: ['Menos instrumentos'],
+                experience: 'intermediate',
+                tradingDuration: '1-3-years',
+                isApproved: true,
+                verified: true,
+                helpful: 13,
+                notHelpful: 3
+            },
+            {
+                broker: derivBroker._id,
+                user: { name: 'Carmen Ruiz', email: 'carmen.ruiz@email.com', country: 'Brasil' },
+                rating: 4,
+                title: 'Plataforma intuitiva para CFDs',
+                content: 'Deriv tiene una plataforma intuitiva para trading de CFDs. Tienen más de 500 instrumentos, amplia elección de plataformas y el depósito mínimo es muy bajo. El soporte 24/7 es excelente.',
+                pros: ['Plataforma intuitiva', 'Depósito bajo', 'Soporte 24/7'],
+                cons: ['Menos instrumentos'],
+                experience: 'beginner',
+                tradingDuration: 'less-than-1-year',
+                isApproved: true,
+                verified: true,
+                helpful: 18,
+                notHelpful: 2
+            },
+            {
+                broker: derivBroker._id,
+                user: { name: 'Javier Hernández', email: 'javier.hernandez@email.com', country: 'México' },
+                rating: 5,
+                title: 'Excelente soporte 24/7',
+                content: 'Deriv tiene excelente soporte al cliente 24/7. Tienen más de 500 instrumentos, amplia elección de plataformas y el depósito mínimo es muy bajo. Ideal para traders que necesitan soporte continuo.',
+                pros: ['Soporte 24/7 excelente', 'Amplia elección de plataformas', 'Depósito bajo'],
+                cons: ['Menos instrumentos'],
+                experience: 'intermediate',
+                tradingDuration: '1-3-years',
+                isApproved: true,
+                verified: true,
+                helpful: 20,
+                notHelpful: 1
+            },
+            {
+                broker: derivBroker._id,
+                user: { name: 'Isabel Castro', email: 'isabel.castro@email.com', country: 'Colombia' },
+                rating: 4,
+                title: 'Buena opción para trading de opciones',
+                content: 'Deriv es una buena opción para trading de opciones. Tienen más de 500 instrumentos, amplia elección de plataformas y el soporte 24/7 es excelente. El depósito mínimo bajo es un plus importante.',
+                pros: ['Trading de opciones', 'Amplia elección de plataformas', 'Depósito bajo'],
+                cons: ['Menos instrumentos'],
+                experience: 'advanced',
+                tradingDuration: '3-5-years',
+                isApproved: true,
+                verified: true,
+                helpful: 17,
+                notHelpful: 3
+            },
+            
+            // TMGM Reviews (8 reviews)
+            {
+                broker: tmgmBroker._id,
+                user: { name: 'Miguel Vega', email: 'miguel.vega@email.com', country: 'México' },
+                rating: 4,
+                title: 'Broker global con regulación sólida',
+                content: 'TMGM es un broker global con regulación sólida ASIC y FSA. Los spreads son competitivos, tienen plataformas MetaTrader y el soporte multilingüe es bueno. Buena opción para traders latinoamericanos.',
+                pros: ['Regulación ASIC y FSA', 'Spreads competitivos', 'Plataformas MetaTrader'],
+                cons: ['Menos conocido en LATAM'],
+                experience: 'intermediate',
+                tradingDuration: '1-3-years',
+                isApproved: true,
+                verified: true,
+                helpful: 14,
+                notHelpful: 4
+            },
+            {
+                broker: tmgmBroker._id,
+                user: { name: 'Lucía Morales', email: 'lucia.morales@email.com', country: 'Colombia' },
+                rating: 4,
+                title: 'Buena opción con regulación ASIC',
+                content: 'TMGM es una buena opción con regulación ASIC que da confianza. Los spreads son competitivos, tienen plataformas MetaTrader y el soporte multilingüe es útil. Buena ejecución.',
+                pros: ['Regulación ASIC', 'Spreads competitivos', 'Soporte multilingüe'],
+                cons: ['Menos conocido en LATAM'],
+                experience: 'intermediate',
+                tradingDuration: '1-3-years',
+                isApproved: true,
+                verified: true,
+                helpful: 16,
+                notHelpful: 3
+            },
+            {
+                broker: tmgmBroker._id,
+                user: { name: 'Daniel Cruz', email: 'daniel.cruz@email.com', country: 'Argentina' },
+                rating: 4,
+                title: 'Broker confiable con MetaTrader',
+                content: 'TMGM es un broker confiable con plataformas MetaTrader. Los spreads son competitivos, la regulación ASIC y FSA es sólida y el soporte multilingüe es bueno. Buena opción para traders experimentados.',
+                pros: ['Plataformas MetaTrader', 'Regulación sólida', 'Spreads competitivos'],
+                cons: ['Menos conocido en LATAM'],
+                experience: 'advanced',
+                tradingDuration: '3-5-years',
+                isApproved: true,
+                verified: true,
+                helpful: 15,
+                notHelpful: 4
+            },
+            {
+                broker: tmgmBroker._id,
+                user: { name: 'Sandra Jiménez', email: 'sandra.jimenez@email.com', country: 'Chile' },
+                rating: 4,
+                title: 'Buena ejecución y spreads competitivos',
+                content: 'TMGM tiene buena ejecución y spreads competitivos. La regulación ASIC y FSA es sólida, tienen plataformas MetaTrader y el soporte multilingüe es útil. Buena opción para LATAM.',
+                pros: ['Ejecución buena', 'Spreads competitivos', 'Regulación sólida'],
+                cons: ['Menos conocido en LATAM'],
+                experience: 'intermediate',
+                tradingDuration: '1-3-years',
+                isApproved: true,
+                verified: true,
+                helpful: 13,
+                notHelpful: 3
+            },
+            {
+                broker: tmgmBroker._id,
+                user: { name: 'Héctor Ramírez', email: 'hector.ramirez@email.com', country: 'Perú' },
+                rating: 4,
+                title: 'Broker sólido con presencia global',
+                content: 'TMGM es un broker sólido con presencia global. La regulación ASIC y FSA es sólida, los spreads son competitivos y tienen plataformas MetaTrader. El soporte multilingüe es bueno.',
+                pros: ['Presencia global', 'Regulación sólida', 'Plataformas MetaTrader'],
+                cons: ['Menos conocido en LATAM'],
+                experience: 'advanced',
+                tradingDuration: 'more-than-5-years',
+                isApproved: true,
+                verified: true,
+                helpful: 18,
+                notHelpful: 2
+            },
+            {
+                broker: tmgmBroker._id,
+                user: { name: 'Patricia Fernández', email: 'patricia.fernandez@email.com', country: 'Brasil' },
+                rating: 4,
+                title: 'Buena opción con regulación múltiple',
+                content: 'TMGM es una buena opción con regulación múltiple ASIC y FSA. Los spreads son competitivos, tienen plataformas MetaTrader y el soporte multilingüe es útil. Buena ejecución.',
+                pros: ['Regulación múltiple', 'Spreads competitivos', 'Soporte multilingüe'],
+                cons: ['Menos conocido en LATAM'],
+                experience: 'intermediate',
+                tradingDuration: '1-3-years',
+                isApproved: true,
+                verified: true,
+                helpful: 17,
+                notHelpful: 3
+            },
+            {
+                broker: tmgmBroker._id,
+                user: { name: 'Fernando Torres', email: 'fernando.torres@email.com', country: 'México' },
+                rating: 4,
+                title: 'Broker confiable con MetaTrader',
+                content: 'TMGM es un broker confiable con plataformas MetaTrader. La regulación ASIC y FSA es sólida, los spreads son competitivos y el soporte multilingüe es bueno. Buena opción para traders latinoamericanos.',
+                pros: ['Plataformas MetaTrader', 'Regulación sólida', 'Spreads competitivos'],
+                cons: ['Menos conocido en LATAM'],
+                experience: 'intermediate',
+                tradingDuration: '1-3-years',
+                isApproved: true,
+                verified: true,
+                helpful: 12,
+                notHelpful: 4
+            },
+            {
+                broker: tmgmBroker._id,
+                user: { name: 'Laura Sánchez', email: 'laura.sanchez@email.com', country: 'Colombia' },
+                rating: 4,
+                title: 'Buena experiencia con regulación ASIC',
+                content: 'Mi experiencia con TMGM ha sido positiva. La regulación ASIC da confianza, los spreads son competitivos y tienen plataformas MetaTrader. El soporte multilingüe es útil aunque menos conocido en LATAM.',
+                pros: ['Regulación ASIC', 'Spreads competitivos', 'Plataformas MetaTrader'],
+                cons: ['Menos conocido en LATAM'],
+                experience: 'intermediate',
+                tradingDuration: '1-3-years',
+                isApproved: true,
+                verified: true,
+                helpful: 11,
+                notHelpful: 5
             }
         ];
 

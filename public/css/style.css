@@ -2007,3 +2007,1402 @@ section {
         text-align: center;
     }
 }
+
+/* BestBrokerLatam.com Features Section */
+.bestbroker-features {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.features-grid-three {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.feature-card-large {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.feature-card-large:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon-large {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.feature-card-large h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.feature-card-large p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Leaderboard Section (FX Trust Score Style) */
+.leaderboard-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.leaderboard-container {
+    margin-top: 40px;
+}
+
+.leaderboard-item {
+    background: white;
+    border: 2px solid #e1e5e9;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 25px;
+    transition: all 0.3s ease;
+}
+
+.leaderboard-item:hover {
+    border-color: #007bff;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.15);
+}
+
+.leaderboard-item.featured {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-color: #667eea;
+}
+
+.leaderboard-item.featured h3,
+.leaderboard-item.featured p {
+    color: white;
+}
+
+.leaderboard-rank {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #007bff;
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leaderboard-item.featured .leaderboard-rank {
+    color: white;
+}
+
+.leaderboard-content {
+    flex: 1;
+}
+
+.leaderboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.leaderboard-header h3 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.leaderboard-rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rating-score {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.stars {
+    color: #ffc107;
+    font-size: 1.2rem;
+}
+
+.leaderboard-description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.leaderboard-item.featured .leaderboard-description {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.leaderboard-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.feature-badge {
+    background: #e9ecef;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #495057;
+}
+
+.leaderboard-item.featured .feature-badge {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.leaderboard-actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.leaderboard-actions .btn {
+    flex: 1;
+    min-width: 150px;
+}
+
+.leaderboard-item.featured .btn-secondary {
+    background: white;
+    color: #667eea;
+}
+
+.leaderboard-item.featured .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* Score Breakdown Section */
+.score-breakdown-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.score-breakdown-table {
+    margin-top: 40px;
+    overflow-x: auto;
+}
+
+.score-breakdown-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.score-breakdown-table thead {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.score-breakdown-table th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.score-breakdown-table td {
+    padding: 15px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.score-breakdown-table tbody tr:hover {
+    background: #f8f9fa;
+}
+
+.score-breakdown-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.score-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.score-badge.score-5 {
+    background: #28a745;
+    color: white;
+}
+
+.score-badge.score-4 {
+    background: #ffc107;
+    color: #333;
+}
+
+.score-badge.score-3 {
+    background: #fd7e14;
+    color: white;
+}
+
+.score-badge.score-2 {
+    background: #dc3545;
+    color: white;
+}
+
+.score-badge.score-1 {
+    background: #6c757d;
+    color: white;
+}
+
+/* Responsive styles for new sections */
+@media (max-width: 768px) {
+    .features-grid-three {
+        grid-template-columns: 1fr;
+    }
+
+    .leaderboard-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .leaderboard-rank {
+        min-width: auto;
+    }
+
+    .leaderboard-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .leaderboard-actions {
+        flex-direction: column;
+    }
+
+    .leaderboard-actions .btn {
+        width: 100%;
+    }
+
+    .score-breakdown-table {
+        font-size: 0.85rem;
+    }
+
+    .score-breakdown-table th,
+    .score-breakdown-table td {
+        padding: 10px 8px;
+    }
+}
+
+
+/* ============================================
+   BROKERS CONFIABLES - UNIQUE THEME STYLES
+   Style: FXSTREET
+   ============================================ */
+
+:root {
+    --primary-color: #2E7D32;
+    --secondary-color: #1B5E20;
+    --accent-color: #4CAF50;
+    --font-family: "Inter", sans-serif;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+/* Logo Styles */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.logo-main {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-family: var(--font-family);
+}
+
+.logo-sub {
+    font-size: 0.75rem;
+    color: #666;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Navigation Theme Styles */
+
+.navbar {
+    background: #fff;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+    border-bottom: 3px solid var(--primary-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hero Section Themes */
+
+.hero {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+    color: white;
+    padding: 120px 0 80px;
+}
+.hero h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.hero p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Button Theme Styles */
+.btn-primary {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-secondary {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Section Title Styles */
+.section-title {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-family: var(--font-family);
+}
+
+/* Leaderboard Item Featured */
+.leaderboard-item.featured {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+.leaderboard-rank {
+    color: var(--primary-color);
+}
+
+/* Score Badge Colors */
+.score-badge.score-5 {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Feature Cards */
+.feature-card-large {
+    border-top: 4px solid var(--primary-color);
+}
+
+.feature-icon-large {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+}
+
+/* Responsive Logo */
+@media (max-width: 768px) {
+    .logo-sub {
+        display: none;
+    }
+    .logo-main {
+        font-size: 1.2rem;
+    }
+    .logo-icon {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* ============================================
+   REFERENCE SITE STYLES
+   Inspired by FXStreet, FX Trust Score, BestBrokers.com
+   ============================================ */
+
+/* FXStreet-Style Trending Bar */
+.trending-bar {
+    background: #f5f5f5;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 8px 0;
+    font-size: 0.85rem;
+    position: relative;
+    z-index: 999;
+}
+
+.trending-bar .container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.trending-label {
+    font-weight: 700;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.trending-items {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.trending-items a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-weight: 500;
+}
+
+.trending-items a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* FX Trust Score Style - Article Header */
+.hero-article {
+    background: #fff;
+    padding: 40px 0 30px;
+    margin-top: 70px;
+}
+
+.article-header {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.breadcrumb-nav-inline {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.breadcrumb-nav-inline a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.breadcrumb-nav-inline a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-sep {
+    margin: 0 8px;
+    color: #999;
+}
+
+.article-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.article-intro {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* BestBrokers.com Style - Professional Hero */
+.hero-professional {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 100px 0 60px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.hero-content-professional {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-title-large {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.hero-subtitle-large {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Enhanced Leaderboard - FX Trust Score Style */
+.leaderboard-section.fxtrust-style {
+    background: #f8f9fa;
+    padding: 60px 0;
+}
+
+.leaderboard-section.fxtrust-style .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.leaderboard-section.fxtrust-style .section-subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.leaderboard-item.winner {
+    position: relative;
+    border: 3px solid var(--primary-color);
+}
+
+.winner-badge {
+    position: absolute;
+    top: -15px;
+    right: 30px;
+    background: var(--primary-color);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.badge-text {
+    display: block;
+}
+
+/* FXStreet-Style Broker Cards */
+.broker-card-fxstreet {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.broker-card-fxstreet:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.broker-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.broker-name-section {
+    flex: 1;
+}
+
+.broker-name-large {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.broker-tagline {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.broker-actions-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-visit-broker {
+    background: var(--primary-color);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.btn-visit-broker:hover {
+    background: var(--secondary-color);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.broker-description-fxstreet {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.broker-pros-cons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.pros-section h4,
+.cons-section h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.pros-section h4 {
+    color: #28a745;
+}
+
+.cons-section h4 {
+    color: #dc3545;
+}
+
+.pros-list,
+.cons-list {
+    list-style: none;
+    padding: 0;
+}
+
+.pros-list li,
+.cons-list li {
+    padding: 8px 0;
+    padding-left: 25px;
+    position: relative;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.pros-list li::before {
+    content: "✅";
+    position: absolute;
+    left: 0;
+}
+
+.cons-list li::before {
+    content: "❌";
+    position: absolute;
+    left: 0;
+}
+
+/* BestBrokers.com Style Cards */
+.broker-card-bestbrokers {
+    background: white;
+    border-radius: 12px;
+    padding: 35px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-top: 4px solid var(--primary-color);
+}
+
+.broker-card-bestbrokers:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px);
+}
+
+.broker-header-bestbrokers {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.broker-logo-large {
+    width: 80px;
+    height: 80px;
+    background: #f5f5f5;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    flex-shrink: 0;
+}
+
+.broker-info-bestbrokers {
+    flex: 1;
+}
+
+.broker-name-bestbrokers {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.broker-rating-bestbrokers {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.rating-number {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.stars-inline {
+    color: #ffc107;
+    font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .trending-bar .container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .trending-items {
+        gap: 15px;
+    }
+    
+    .article-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-title-large {
+        font-size: 2.2rem;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .broker-pros-cons {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .broker-header-bestbrokers {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Additional FXStreet Elements */
+.article-meta {
+    display: flex;
+    gap: 20px;
+    font-size: 0.9rem;
+    color: #999;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.article-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* BestBrokers.com Navigation Style */
+.nav-menu-bestbrokers {
+    display: flex;
+    list-style: none;
+    gap: 0;
+    align-items: center;
+}
+
+.nav-menu-bestbrokers > li {
+    position: relative;
+}
+
+.nav-menu-bestbrokers .nav-link {
+    padding: 15px 20px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.nav-menu-bestbrokers .nav-link:hover {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+    background: rgba(0, 0, 0, 0.02);
+}
+
+/* FX Trust Score Rating Comparison */
+.rating-comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rating-comparison-table thead {
+    background: var(--primary-color);
+    color: white;
+}
+
+.rating-comparison-table th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.rating-comparison-table td {
+    padding: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.rating-comparison-table tbody tr:hover {
+    background: #f8f9fa;
+}
+
+
+
+/* ============================================
+   BROKERSCONFIABLES - UNIQUE SHAPE THEME
+   Buttons: rounded-medium
+   Cards: rounded-large
+   Badges: pill
+   ============================================ */
+
+/* Button Shapes */
+
+
+
+
+
+.btn, .btn-primary, .btn-secondary, .btn-outline, .btn-visit-broker {
+    border-radius: 8px !important;
+}
+
+
+
+
+
+
+/* Card Shapes */
+
+
+
+
+
+
+
+.broker-card, .broker-card-leaderboard, .broker-card-fxstreet, 
+.broker-card-bestbrokers, .feature-card-large, .leaderboard-item {
+    border-radius: 16px !important;
+}
+
+
+/* Badge Shapes */
+
+
+
+
+
+
+
+
+
+.score-badge, .feature-badge, .badge-text, .winner-badge,
+.rating-badge, .category-badge {
+    border-radius: 50px !important;
+    padding: 6px 16px;
+}
+
+
+/* Input Shapes */
+
+
+
+input[type="text"], input[type="email"], input[type="search"],
+textarea, select {
+    border-radius: 4px !important;
+}
+
+
+
+
+
+
+
+
+/* Container Shapes */
+
+
+
+
+
+.container, .nav-container, .hero-container, .section-container {
+    border-radius: 8px;
+}
+
+
+
+
+/* Icon Shapes */
+
+.logo-icon, .feature-icon-large, .broker-logo-large,
+.stat-icon, .icon-circle {
+    border-radius: 50% !important;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Dropdown Shapes */
+
+.dropdown-menu, .language-dropdown {
+    border-radius: 12px !important;
+}
+
+
+
+
+
+
+
+
+/* Navigation Logo Container */
+.nav-logo .logo-container {
+    
+    border-radius: 8px; padding: 8px 12px;
+    
+    
+}
+
+/* Leaderboard Rank Badge */
+.leaderboard-rank {
+    border-radius: 50%; width: 50px; height: 50px;
+    
+    
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+/* Score Breakdown Table */
+.score-table {
+    border-radius: 16px; overflow: hidden;
+    
+    
+    
+}
+
+/* Hero Section Shapes */
+.hero {
+    
+    border-radius: 0 0 16px 16px;
+    
+}
+
+/* Feature Cards */
+.feature-card-large {
+    border-radius: 20px;
+    
+    
+    
+}
+
+/* Responsive Shape Adjustments */
+@media (max-width: 768px) {
+    .btn, .btn-primary, .btn-secondary {
+        
+        
+    }
+    
+    .broker-card, .feature-card-large {
+        border-radius: 12px !important;
+    }
+}
+
+
+/* ============================================
+   CATEGORIES SIDEBAR MENU STYLES
+   ============================================ */
+
+/* Sidebar Container */
+.categories-sidebar {
+    position: fixed;
+    left: 0;
+    top: 70px;
+    width: 280px;
+    height: calc(100vh - 70px);
+    background: #fff;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    border-right: 1px solid #e0e0e0;
+}
+
+.categories-sidebar.active {
+    transform: translateX(0);
+}
+
+/* Sidebar Header */
+.sidebar-header {
+    padding: 20px;
+    border-bottom: 2px solid var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+}
+
+.sidebar-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.sidebar-toggle {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.sidebar-toggle:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Sidebar Navigation */
+.sidebar-nav {
+    padding: 0;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 18px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.sidebar-link:hover {
+    background: #f8f9fa;
+    color: var(--primary-color);
+    padding-left: 25px;
+}
+
+.sidebar-link.active {
+    background: linear-gradient(90deg, var(--primary-color) 0%, transparent 100%);
+    color: white;
+    border-left: 4px solid var(--accent-color);
+}
+
+.sidebar-link i {
+    font-size: 1.2rem;
+    width: 24px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.sidebar-link:hover i,
+.sidebar-link.active i {
+    color: inherit;
+}
+
+.sidebar-link span {
+    flex: 1;
+}
+
+/* Sidebar Footer */
+.sidebar-footer {
+    padding: 20px;
+    border-top: 1px solid #e0e0e0;
+    background: #f8f9fa;
+    display: none;
+}
+
+/* Sidebar Open Button (Mobile) */
+.sidebar-open-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 998;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.sidebar-open-btn:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-open-btn i {
+    font-size: 1.1rem;
+}
+
+/* Main Content Wrapper */
+.main-content-wrapper {
+    margin-left: 0;
+    transition: margin-left 0.3s ease;
+}
+
+.categories-sidebar.active ~ .main-content-wrapper {
+    margin-left: 280px;
+}
+
+/* Overlay for mobile */
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.sidebar-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .categories-sidebar {
+        width: 260px;
+    }
+    
+    .categories-sidebar.active ~ .main-content-wrapper {
+        margin-left: 260px;
+    }
+}
+
+@media (max-width: 768px) {
+    .categories-sidebar {
+        width: 100%;
+        max-width: 320px;
+        top: 0;
+        height: 100vh;
+        z-index: 1001;
+    }
+    
+    .categories-sidebar.active ~ .main-content-wrapper {
+        margin-left: 0;
+    }
+    
+    .sidebar-footer {
+        display: block;
+    }
+    
+    .sidebar-open-btn {
+        display: flex;
+    }
+    
+    .main-content-wrapper {
+        margin-left: 0 !important;
+    }
+}
+
+/* Sidebar Animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.categories-sidebar.active {
+    animation: slideIn 0.3s ease;
+}
+
+/* Sidebar Scrollbar Styling */
+.categories-sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.categories-sidebar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.categories-sidebar::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 3px;
+}
+
+.categories-sidebar::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
