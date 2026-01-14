@@ -1,9 +1,7 @@
 {
-  "buildCommand": "npm run build:static",
+  "buildCommand": "npm install && npm run build:static",
   "outputDirectory": "dist",
-  "rootDirectory": "/",
+  "rootDirectory": "",
   "framework": "static",
   "nodeVersion": "18"
 }
-
-
